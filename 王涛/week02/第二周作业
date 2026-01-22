@@ -1,0 +1,94 @@
+import matplotlib
+import torch
+import numpy as np # cpu 环境（非深度学习中）下的矩阵运算、向量运算
+import matplotlib.pyplot as plt
+matplotlib.use('TkAgg')
+import torch.nn as nn
+import torch.optim as optim
+
+# 1. 生成模拟数据 (与之前相同)
+X_numpy = np.random.rand(200, 1) * 2 * np.pi
+# 形状为 (200, 1) 的二维数组，其中包含 200 个在 [0, 2π) 范围内均匀分布的随机浮点数。
+y_numpy = np.sin(X_numpy) + np.random.randn(200, 1)*0.02
+
+X = torch.from_numpy(X_numpy).float()
+y = torch.from_numpy(y_numpy).float()
+
+print("数据生成完成。")
+print("---" * 10)
+
+
+# 3. 定义损失函数和优化器
+# 损失函数仍然是均方误差 (MSE)。
+loss_fn = torch.nn.MSELoss() # 回归任务
+
+class SimpleClassifier(nn.Module):
+    def __init__(self, input_dim, hidden1_dim, hidden2_dim, hidden3_dim,output_dim): # 层的个数 和 验证集精度
+        # 层初始化
+        super(SimpleClassifier, self).__init__()
+        self.fc1 = nn.Linear(input_dim, hidden1_dim)
+        self.relu1 = nn.ReLU()
+        self.fc2 = nn.Linear(hidden1_dim, hidden2_dim)
+        self.relu2 = nn.ReLU()
+        self.fc3 = nn.Linear(hidden2_dim, hidden3_dim)
+        self.relu3 = nn.ReLU()
+        self.fc4 = nn.Linear(hidden3_dim, output_dim)
+
+    def forward(self, x):
+        # 手动实现每层的计算
+        out = self.fc1(x)
+        out = self.relu1(out)
+        out = self.fc2(out)
+        out = self.relu2(out)
+        out = self.fc3(out)
+        out = self.relu3(out)
+        out = self.fc4(out)
+        return out
+
+
+model = SimpleClassifier(input_dim=1,hidden1_dim=64,hidden2_dim=32,hidden3_dim=8,output_dim=1)
+
+loss_fn = torch.nn.MSELoss()
+optimizer = optim.SGD(model.parameters(), lr=0.1)
+
+
+num_epochs = 2000
+for epoch in range(num_epochs):
+    # 前向传播
+    y_pred = model(X)
+
+    # 计算损失
+    loss = loss_fn(y_pred, y)
+
+    # 反向传播和优化
+    optimizer.zero_grad()  # 清空梯度， torch 梯度 累加
+    loss.backward()  # 计算梯度
+    optimizer.step()  # 更新参数
+
+    if (epoch + 1) % 1 == 0:
+        print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}')
+
+X_test = torch.linspace(0, 2 * np.pi, 1000).unsqueeze(1).float()  # 形状(1000,1)，X从0到2π递增
+
+model.eval()
+with torch.no_grad():
+    y_pred_test = model(X_test)  # 多层网络预测的sin曲线
+    y_pred_train = model(X)  # 训练集的预测值
+
+X_test_numpy = X_test.numpy()
+y_pred_test_numpy = y_pred_test.numpy()
+y_pred_train_numpy = y_pred_train.numpy()
+
+plt.figure(figsize=(10, 6)) #创建一个宽 10、高 6 的图表窗口，让图表大小适中、清晰易读
+# 1.原始sin数据点
+plt.scatter(X_numpy, y_numpy, label='Raw data', color='blue', alpha=0.6)
+# 2.纯sin函数曲线
+plt.plot(X_test_numpy, np.sin(X_test_numpy), label='sin(x)', color='green', linewidth=2)
+# 3.多层网络拟合的曲线
+plt.plot(X_test_numpy, y_pred_test_numpy, label='sin(x)--2', color='red', linewidth=2)
+
+plt.xlabel('X')
+plt.ylabel('y')
+plt.legend() #显示图例，区分数据来源
+plt.grid(True) #显示网格线
+plt.show() # 将之前绘制的所有图形渲染成窗口并显示
