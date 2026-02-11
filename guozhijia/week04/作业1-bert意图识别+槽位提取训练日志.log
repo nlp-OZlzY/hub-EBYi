@@ -1,0 +1,96 @@
+(nlp_learn) guozhijia@guozhijiadeMacBook-Pro 01-intent-classify % /Users/guozhijia/anaconda3/envs/nlp_learn/bin/python training_code/train_bert_joint.py
+Using device: cpu
+Train samples: 4521, Validation samples: 503
+Original Weight for O (ID 192): 0.0083
+Slot weights calculated. Max: 228.4301, Min: 0.0083
+Some weights of BertJointModel were not initialized from the model checkpoint at /Users/guozhijia/Documents/八斗/第3周/Week03/01-intent-classify/assets/models/chinese-roberta-wwm-ext/ and are newly initialized: ['crf.end_transitions', 'crf.start_transitions', 'crf.transitions', 'intent_classifier.bias', 'intent_classifier.weight', 'slot_classifier.bias', 'slot_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Curriculum Learning: CRF enabled if Epoch >= 6 OR Val_F1 > 0.5
+Total training steps: 568, Warmup steps: 56
+
+Epoch 1/8 | CRF Enabled: False (Best F1: 0.0000)
+Training:   0%|                                              | 0/71 [00:00<?, ?it/s]
+--- DEBUG INFO ---
+Sample Input IDs: [101, 3389, 6418, 671, 678, 1298, 3175, 5661, 4958, 4638, 5500, 4873, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Decoded: [CLS] 查 询 一 下 南 方 航 空 的 股 票 [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD]
+Intent Label: 70
+------------------
+
+Training: 100%|█████████████████████████████████████| 71/71 [14:55<00:00, 12.61s/it]
+Average Training Loss: 8.7075
+Training Intent Accuracy: 0.3931
+Training Slot Accuracy: 0.3273 (F1: 0.0139)
+Validation: 100%|█████████████████████████████████████| 8/8 [01:04<00:00,  8.01s/it]
+Validation Intent Accuracy: 0.6521
+Validation Slot Accuracy: 0.6760 (F1: 0.1507)
+Model saved to /Users/guozhijia/Documents/八斗/第3周/Week03/01-intent-classify/assets/weights/bert_joint.pt
+
+Epoch 2/8 | CRF Enabled: False (Best F1: 0.1507)
+Training: 100%|█████████████████████████████████████| 71/71 [15:21<00:00, 12.98s/it]
+Average Training Loss: 4.9495
+Training Intent Accuracy: 0.7640
+Training Slot Accuracy: 0.6977 (F1: 0.3198)
+Validation: 100%|█████████████████████████████████████| 8/8 [00:09<00:00,  1.25s/it]
+Validation Intent Accuracy: 0.8569
+Validation Slot Accuracy: 0.7224 (F1: 0.4722)
+Model saved to /Users/guozhijia/Documents/八斗/第3周/Week03/01-intent-classify/assets/weights/bert_joint.pt
+
+Epoch 3/8 | CRF Enabled: False (Best F1: 0.4722)
+Training: 100%|█████████████████████████████████████| 71/71 [08:18<00:00,  7.03s/it]
+Average Training Loss: 3.0285
+Training Intent Accuracy: 0.8905
+Training Slot Accuracy: 0.7517 (F1: 0.5474)
+Validation: 100%|█████████████████████████████████████| 8/8 [00:09<00:00,  1.20s/it]
+Validation Intent Accuracy: 0.9324
+Validation Slot Accuracy: 0.7928 (F1: 0.6620)
+Model saved to /Users/guozhijia/Documents/八斗/第3周/Week03/01-intent-classify/assets/weights/bert_joint.pt
+
+Epoch 4/8 | CRF Enabled: True (Best F1: 0.6620)
+Training: 100%|█████████████████████████████████████| 71/71 [07:38<00:00,  6.46s/it]
+Average Training Loss: 2.2083
+Training Intent Accuracy: 0.9310
+Training Slot Accuracy: 0.8785 (F1: 0.7740)
+Validation: 100%|█████████████████████████████████████| 8/8 [00:10<00:00,  1.31s/it]
+Validation Intent Accuracy: 0.9443
+Validation Slot Accuracy: 0.9349 (F1: 0.8930)
+Model saved to /Users/guozhijia/Documents/八斗/第3周/Week03/01-intent-classify/assets/weights/bert_joint.pt
+
+Epoch 5/8 | CRF Enabled: True (Best F1: 0.8930)
+Training: 100%|█████████████████████████████████████| 71/71 [07:43<00:00,  6.53s/it]
+Average Training Loss: 1.3939
+Training Intent Accuracy: 0.9633
+Training Slot Accuracy: 0.9461 (F1: 0.9094)
+Validation: 100%|█████████████████████████████████████| 8/8 [00:10<00:00,  1.31s/it]
+Validation Intent Accuracy: 0.9583
+Validation Slot Accuracy: 0.9491 (F1: 0.9189)
+Model saved to /Users/guozhijia/Documents/八斗/第3周/Week03/01-intent-classify/assets/weights/bert_joint.pt
+
+Epoch 6/8 | CRF Enabled: True (Best F1: 0.9189)
+Training: 100%|█████████████████████████████████████| 71/71 [07:42<00:00,  6.51s/it]
+Average Training Loss: 1.0284
+Training Intent Accuracy: 0.9812
+Training Slot Accuracy: 0.9644 (F1: 0.9417)
+Validation: 100%|█████████████████████████████████████| 8/8 [00:10<00:00,  1.28s/it]
+Validation Intent Accuracy: 0.9742
+Validation Slot Accuracy: 0.9590 (F1: 0.9350)
+Model saved to /Users/guozhijia/Documents/八斗/第3周/Week03/01-intent-classify/assets/weights/bert_joint.pt
+
+Epoch 7/8 | CRF Enabled: True (Best F1: 0.9350)
+Training: 100%|█████████████████████████████████████| 71/71 [07:35<00:00,  6.42s/it]
+Average Training Loss: 0.8178
+Training Intent Accuracy: 0.9892
+Training Slot Accuracy: 0.9740 (F1: 0.9578)
+Validation: 100%|█████████████████████████████████████| 8/8 [00:10<00:00,  1.29s/it]
+Validation Intent Accuracy: 0.9761
+Validation Slot Accuracy: 0.9617 (F1: 0.9396)
+Model saved to /Users/guozhijia/Documents/八斗/第3周/Week03/01-intent-classify/assets/weights/bert_joint.pt
+
+Epoch 8/8 | CRF Enabled: True (Best F1: 0.9396)
+Training: 100%|█████████████████████████████████████| 71/71 [07:38<00:00,  6.45s/it]
+Average Training Loss: 0.7244
+Training Intent Accuracy: 0.9931
+Training Slot Accuracy: 0.9771 (F1: 0.9631)
+Validation: 100%|█████████████████████████████████████| 8/8 [00:10<00:00,  1.28s/it]
+Validation Intent Accuracy: 0.9821
+Validation Slot Accuracy: 0.9617 (F1: 0.9396)
+Model saved to /Users/guozhijia/Documents/八斗/第3周/Week03/01-intent-classify/assets/weights/bert_joint.pt
