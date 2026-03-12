@@ -1,4 +1,5 @@
 """
+基于train.json数据集，写的提示词
 你是一个智能对话系统中的语义解析助手，请对下面的文本抽取他的领域类别、意图类型、实体标签
 - 待选的领域类别：app / bus / map / train / cinemas / telephone / contacts / message / cookbook / email / epg / flight / health / lottery / match / music / news / poetry / riddle / stock / telephone / translation / tvchannel / video / weather / website / novel / joke / story
 - 待选的意图类别：LAUNCH / QUERY / REPLAY_ALL / NUMBER_QUERY / DIAL / CLOSEPRICE_QUERY / SEND / OPEN / PLAY / REPLY / RISERATE_QUERY / DOWNLOAD / SEARCH / LOOK_BACK / CREATE / FORWARD / DATE_QUERY / SENDCONTACTS / DEFAULT / TRANSLATION / VIEW / NaN / ROUTE / POSITION
