@@ -8,7 +8,7 @@ import io
 # ==================== 配置 ====================
 # 1. 设置 API Key 
 client = OpenAI(
-    api_key="sk-14ddbf6d3e1c41c5ae4e9088e9c6dbfc",  # 或直接填入 "sk-xxx"
+    api_key="sk-14ddbf6d3e1c41c5ae4e9088e9c6dbfc",  
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 
