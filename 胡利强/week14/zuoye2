@@ -1,0 +1,89 @@
+import yfinance as yf
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# ==================== 股票可视化 Skill 定义 ====================
+class StockVisualSkill:
+    def __init__(self, stock_code: str = "AAPL"):
+        """
+        初始化股票Skill
+        :param stock_code: 股票代码，默认苹果公司 AAPL
+        """
+        self.stock_code = stock_code
+        self.df = None  # 日K数据
+        self.weekly_df = None  # 周K数据
+
+    def fetch_data(self):
+        """获取股票数据"""
+        self.df = yf.download(self.stock_code, period="60d")  # 近60天数据
+        self.weekly_df = self.df.resample('W').agg({
+            'Open': 'first',
+            'High': 'max',
+            'Low': 'min',
+            'Close': 'last'
+        })
+
+        # 计算波动
+        self.df['日波动'] = (self.df['Close'] - self.df['Open']) / self.df['Open'] * 100
+        self.weekly_df['周波动'] = (self.weekly_df['Close'] - self.weekly_df['Open']) / self.weekly_df['Open'] * 100
+
+    def plot_volatility(self):
+        """绘制日波动 + 周波动同图"""
+        plt.rcParams['font.sans-serif'] = ['SimHei']  # 解决中文显示
+        plt.rcParams['axes.unicode_minus'] = False
+
+        plt.figure(figsize=(14, 6))
+
+        # 日波动（折线）
+        plt.plot(self.df.index, self.df['日波动'], label='日波动(%)', color='#1f77b4', linewidth=1.5)
+        
+        # 周波动（柱状）
+        plt.bar(self.weekly_df.index, self.weekly_df['周波动'], label='周波动(%)', 
+                color='#ff7f0e', alpha=0.6, width=3)
+
+        plt.axhline(y=0, color='black', linestyle='--', linewidth=0.8)
+        plt.title(f'{self.stock_code} 日波动与周波动对比', fontsize=14)
+        plt.xlabel('日期')
+        plt.ylabel('波动幅度 (%)')
+        plt.legend()
+        plt.grid(alpha=0.3)
+        plt.tight_layout()
+        plt.show()
+
+    def get_trade_advice(self):
+        """根据波动大小给出买卖建议"""
+        daily_vol = self.df['日波动'].abs().mean()
+        weekly_vol = self.weekly_df['周波动'].abs().mean()
+
+        latest_daily = self.df['日波动'].iloc[-1]
+        latest_weekly = self.weekly_df['周波动'].iloc[-1]
+
+        advice = "\n========== 股票买卖建议 ==========\n"
+        advice += f"平均日波动：{daily_vol:.2f}%\n"
+        advice += f"平均周波动：{weekly_vol:.2f}%\n\n"
+
+        # 买卖策略逻辑
+        if latest_daily < -2 and latest_weekly < -3:
+            advice += "✅ 建议：**买入**\n（短期+中期大幅下跌，属于低吸机会）"
+        elif latest_daily > 2 and latest_weekly > 3:
+            advice += "❌ 建议：**卖出**\n（短期+中期大幅上涨，属于止盈时机）"
+        elif abs(latest_daily) < 1 and abs(latest_weekly) < 1:
+            advice += "⏸ 建议：**观望**\n（波动极小，无明确方向）"
+        else:
+            advice += "⚠ 建议：**持有/轻仓操作**\n（波动中等，趋势不明确）"
+        
+        return advice
+
+    def run(self):
+        """运行整个Skill"""
+        print(f"正在加载 {self.stock_code} 股票数据...")
+        self.fetch_data()
+        self.plot_volatility()
+        print(self.get_trade_advice())
+
+# ==================== 调用 Skill ====================
+if __name__ == "__main__":
+    # 支持任意股票代码：AAPL(苹果)、MSFT(微软)、TSLA(特斯拉)、0700.HK(腾讯)
+    stock_skill = StockVisualSkill(stock_code="AAPL")
+    stock_skill.run()
