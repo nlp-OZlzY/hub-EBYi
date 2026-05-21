@@ -1,0 +1,18 @@
+Python编程指南
+
+Python是一种高级编程语言，由Guido van Rossum于1991年创建。Python以其简洁易读的语法和丰富的库生态而闻名。
+
+Python的主要特点：
+1. 简洁易读：Python使用缩进来组织代码，语法清晰
+2. 丰富的标准库：内置大量实用模块
+3. 跨平台：支持Windows、Linux、macOS等操作系统
+4. 动态类型：变量不需要预先声明类型
+5. 面向对象：完全支持面向对象编程
+
+Python的常用框架：
+- Web开发：Django、Flask、FastAPI
+- 数据科学：NumPy、Pandas、Matplotlib
+- 机器学习：Scikit-learn、TensorFlow、PyTorch
+- 自然语言处理：NLTK、SpaCy、Transformers
+
+Python的包管理工具pip可以方便地安装和管理第三方库。虚拟环境（venv）用于隔离不同项目的依赖。

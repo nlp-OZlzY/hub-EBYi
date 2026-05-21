@@ -1,0 +1,3943 @@
+[
+    {
+        "type": "text",
+        "text": "第3章有信息搜索",
+        "text_level": 2,
+        "bbox": [
+            245,
+            361,
+            742,
+            477
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            247,
+            729,
+            586,
+            811
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "ERSITY. JUIN NINERS 1946 CHINA cience 1976 林 大",
+        "bbox": [
+            41,
+            55,
+            254,
+            233
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "人工智能引论",
+        "bbox": [
+            560,
+            96,
+            902,
+            187
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "1",
+        "bbox": [
+            915,
+            942,
+            923,
+            962
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "录",
+        "text_level": 2,
+        "bbox": [
+            23,
+            329,
+            84,
+            429
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1 贪心最佳优先搜索",
+        "bbox": [
+            265,
+            157,
+            627,
+            231
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2 A\\*搜索",
+        "bbox": [
+            260,
+            294,
+            442,
+            364
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3 内存受限搜索",
+        "bbox": [
+            259,
+            429,
+            551,
+            503
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4 启发式函数",
+        "bbox": [
+            261,
+            566,
+            514,
+            640
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINAR 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "0有信息搜索",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            294,
+            129
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            79,
+            214,
+            258,
+            270
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "code_body": "function BEsT-FIRsT-SEARCH(problem,f)returns一个解节点或failure  \nnode ←NODE(STATE=problem.INIIAL)评估函数f  \nfrontier←一个以f排序的优先队列，其中一个元素为node  \nreached←一个查找表，其中一个条目的键为problem.INrrIAL，值为node  \nwhilenot Is-EMPTY(frontier) do  \nnode←PoP(frontier)  \nif problem.Is-GoAL(node.STATE) thenreturn node  \nforeachchildinExpAND(problem,node)do  \ns←child.STATE  \nif s不在reached中orchild.PATH-CosT<reached[s].PArH-CosT then  \nreached[s]←child  \n将child添加到frontier中  \nreturn failure",
+        "bbox": [
+            218,
+            327,
+            806,
+            957
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "3",
+        "bbox": [
+            914,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "0有信息搜索",
+        "text_level": 2,
+        "bbox": [
+            15,
+            50,
+            295,
+            129
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "评估函数",
+        "bbox": [
+            52,
+            244,
+            173,
+            305
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "f(n) g(n)",
+        "bbox": [
+            203,
+            244,
+            410,
+            309
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "当前实际代价",
+        "bbox": [
+            301,
+            375,
+            455,
+            429
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "h(n)",
+        "bbox": [
+            559,
+            244,
+            643,
+            353
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "后续估计代价",
+        "bbox": [
+            521,
+            375,
+            677,
+            431
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "g(n)是从开始节点到当前节点n的实际代价",
+        "bbox": [
+            43,
+            533,
+            616,
+            594
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "·h(n)是从当前节点n到目标节点的最优解的估计代价",
+        "bbox": [
+            43,
+            633,
+            732,
+            694
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "f(n)是经过节点n的最优解的估计代价",
+        "bbox": [
+            43,
+            733,
+            554,
+            794
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            142,
+            992
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "4",
+        "bbox": [
+            914,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            86,
+            50,
+            421,
+            129
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "一致代价搜索：f(n) =g(n)",
+        "bbox": [
+            78,
+            268,
+            366,
+            320
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "扩展路径代价g(n)最小的节点",
+        "bbox": [
+            78,
+            348,
+            429,
+            401
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "·g(n)是从开始节点到当前节点n的实际路径代价",
+        "bbox": [
+            78,
+            427,
+            615,
+            483
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索：f(n) =h(n)",
+        "text_level": 2,
+        "bbox": [
+            78,
+            588,
+            418,
+            640
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "扩展启发式函数h(n)最小的节点",
+        "bbox": [
+            78,
+            668,
+            454,
+            720
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "·h(n)是从当前节点n到目标节点的最小路径代价的估计值（启发式函数），若n为目标节点，则h(n)=0",
+        "bbox": [
+            78,
+            748,
+            910,
+            883
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "5",
+        "bbox": [
+            914,
+            940,
+            925,
+            964
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            86,
+            50,
+            421,
+            129
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            78,
+            212,
+            316,
+            272
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "·扩展看起来最接近目标的节点,f(n)=h(n)",
+        "bbox": [
+            78,
+            303,
+            555,
+            357
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/abf33d5fe8351b651b81cebbf632c5eadae2291effa6f7728cdb9e7f979dfe77.jpg",
+        "table_caption": [
+            "到Bucharest的直线距离"
+        ],
+        "table_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "table_body": "<table><tr><td>Arad</td><td>366</td><td>Mehadia</td><td>241</td></tr><tr><td>Bucharest</td><td>0</td><td>Neamt</td><td>234</td></tr><tr><td>Craiova</td><td>160</td><td>Oradea</td><td>380</td></tr><tr><td>Drobeta</td><td>242</td><td>Pitesti</td><td>100</td></tr><tr><td>Eforie</td><td>161</td><td>Rimnicu Vilcea</td><td>193</td></tr><tr><td>Fagaras</td><td>176</td><td>Sibiu</td><td>253</td></tr><tr><td>Giurgiu</td><td>77</td><td>Timisoara</td><td>329</td></tr><tr><td>Hirsova</td><td>151</td><td>Urziceni</td><td>80</td></tr><tr><td>Iasi</td><td>226</td><td>Vaslui</td><td>199</td></tr><tr><td>Lugoj</td><td>244</td><td>Zerind</td><td>374</td></tr></table>",
+        "bbox": [
+            40,
+            472,
+            380,
+            944
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/40ee04e5fc334bf0638719020677447f083440132b931680d68586c5549b52d7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            407,
+            379,
+            930,
+            966
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            86,
+            50,
+            421,
+            129
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            78,
+            214,
+            316,
+            272
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "·扩展看起来最接近目标的节点,f(n)=h(n)",
+        "bbox": [
+            78,
+            303,
+            555,
+            357
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/c2fe5a686d1c81311bc46a2543d0eea01503445113faa20f3143110704e2dc82.jpg",
+        "table_caption": [
+            "到Bucharest的直线距离"
+        ],
+        "table_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "table_body": "<table><tr><td>Arad</td><td>366</td><td>Mehadia</td><td>241</td></tr><tr><td>Bucharest</td><td>0</td><td>Neamt</td><td>234</td></tr><tr><td>Craiova</td><td>160</td><td>Oradea</td><td>380</td></tr><tr><td>Drobeta</td><td>242</td><td>Pitesti</td><td>100</td></tr><tr><td>Eforie</td><td>161</td><td>Rimnicu Vilcea</td><td>193</td></tr><tr><td>Fagaras</td><td>176</td><td>Sibiu</td><td>253</td></tr><tr><td>Giurgiu</td><td>77</td><td>Timisoara</td><td>329</td></tr><tr><td>Hirsova</td><td>151</td><td>Urziceni</td><td>80</td></tr><tr><td>Iasi</td><td>226</td><td>Vaslui</td><td>199</td></tr><tr><td>Lugoj</td><td>244</td><td>Zerind</td><td>374</td></tr></table>",
+        "bbox": [
+            37,
+            472,
+            380,
+            944
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/462a757d10b36f31a0470464b6b8c103699886d40afa40578e61b23035303790.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            407,
+            381,
+            930,
+            950
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "7",
+        "bbox": [
+            913,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            86,
+            50,
+            421,
+            129
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            78,
+            214,
+            316,
+            272
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "·扩展看起来最接近目标的节点,f(n)=h(n)",
+        "bbox": [
+            78,
+            303,
+            555,
+            357
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/ef6a004dde5c9ce3b437c255b94e5898b78cebd134c6fa04c2a0d5f07efe9b23.jpg",
+        "table_caption": [
+            "到Bucharest的直线距离"
+        ],
+        "table_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "table_body": "<table><tr><td>Arad</td><td>366</td><td>Mehadia</td><td>241</td></tr><tr><td>Bucharest</td><td>0</td><td>Neamt</td><td>234</td></tr><tr><td>Craiova</td><td>160</td><td>Oradea</td><td>380</td></tr><tr><td>Drobeta</td><td>242</td><td>Pitesti</td><td>100</td></tr><tr><td>Eforie</td><td>161</td><td>Rimnicu Vilcea</td><td>193</td></tr><tr><td>Fagaras</td><td>176</td><td>Sibiu</td><td>253</td></tr><tr><td>Giurgiu</td><td>77</td><td>Timisoara</td><td>329</td></tr><tr><td>Hirsova</td><td>151</td><td>Urziceni</td><td>80</td></tr><tr><td>Iasi</td><td>226</td><td>Vaslui</td><td>199</td></tr><tr><td>Lugoj</td><td>244</td><td>Zerind</td><td>374</td></tr></table>",
+        "bbox": [
+            39,
+            470,
+            380,
+            944
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/f5b4f50a3678a102ddc59044d0e0ac2612787981f08fb22c2d3e916e173cf846.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            406,
+            381,
+            930,
+            951
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINAR 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "8",
+        "bbox": [
+            914,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            86,
+            50,
+            421,
+            129
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "到Bucharest的直线距离",
+        "bbox": [
+            108,
+            251,
+            321,
+            298
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/22b8ddfa543ff03bb569c4089288627dbcf186940aface3ef720f70a7dd38283.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "table_body": "<table><tr><td>Arad</td><td>366</td><td>Mehadia</td><td>241</td></tr><tr><td>Bucharest</td><td>0</td><td>Neamt</td><td>234</td></tr><tr><td>Craiova</td><td>160</td><td>Oradea</td><td>380</td></tr><tr><td>Drobeta</td><td>242</td><td>Pitesti</td><td>100</td></tr><tr><td>Eforie</td><td>161</td><td>Rimnicu Vilcea</td><td>193</td></tr><tr><td>Fagaras</td><td>176</td><td>Sibiu</td><td>253</td></tr><tr><td>Giurgiu</td><td>77</td><td>Timisoara</td><td>329</td></tr><tr><td>Hirsova</td><td>151</td><td>Urziceni</td><td>80</td></tr><tr><td>Iasi</td><td>226</td><td>Vaslui</td><td>199</td></tr><tr><td>Lugoj</td><td>244</td><td>Zerind</td><td>374</td></tr></table>",
+        "bbox": [
+            61,
+            329,
+            396,
+            801
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/b1a7aa5a9c2061c23a1174c661c960830ea6aeda8679e23956f3d948838fd99f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            476,
+            138,
+            998,
+            992
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA",
+        "bbox": [
+            896,
+            3,
+            995,
+            144
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            86,
+            50,
+            421,
+            129
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/246eec98ab433e0210011ebd31366bbcd4e508582e2b289b1852f1dd623d6810.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "bbox": [
+            144,
+            192,
+            845,
+            925
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA林",
+        "bbox": [
+            896,
+            3,
+            993,
+            181
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "10",
+        "bbox": [
+            908,
+            940,
+            925,
+            964
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            86,
+            50,
+            421,
+            129
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "不足之处",
+        "text_level": 2,
+        "bbox": [
+            78,
+            214,
+            200,
+            270
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "贪心最佳优先搜索不是最优的",
+        "bbox": [
+            78,
+            303,
+            436,
+            355
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "·启发函数代价最小化这一目标会对错误的起点比较敏感",
+        "bbox": [
+            78,
+            383,
+            713,
+            435
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "·贪心最佳优先搜索有限状态空间完备，无限状态空间不完备",
+        "bbox": [
+            78,
+            462,
+            761,
+            516
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "·可能沿着一条无限的路径走下去而不回来做其它的选择尝试，因此无法找",
+        "bbox": [
+            78,
+            542,
+            926,
+            596
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "到最佳路径这一答案",
+        "bbox": [
+            106,
+            622,
+            337,
+            675
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            4,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/c871a220caf2dfb4e94d35d47cb9e36308b5ec203236b25fa6fec9ab36596b40.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            385,
+            609,
+            854,
+            1000
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "E ERSITY.1946 CHINA林",
+        "bbox": [
+            896,
+            3,
+            993,
+            181
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "11",
+        "bbox": [
+            907,
+            940,
+            922,
+            966
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            85,
+            50,
+            214,
+            127
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "评估函数",
+        "bbox": [
+            52,
+            244,
+            173,
+            305
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "f(n) g(n)",
+        "bbox": [
+            203,
+            244,
+            410,
+            309
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "当前实际代价",
+        "bbox": [
+            301,
+            375,
+            455,
+            431
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "h(n)",
+        "bbox": [
+            559,
+            244,
+            643,
+            353
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "后续估计代价",
+        "bbox": [
+            521,
+            375,
+            677,
+            431
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "g(n)是从开始节点到当前节点n的实际代价",
+        "bbox": [
+            43,
+            533,
+            616,
+            594
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "·h(n)是从当前节点n到目标节点的最优解的估计代价",
+        "bbox": [
+            43,
+            633,
+            732,
+            694
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "f(n)是经过节点n的最优解的估计代价",
+        "bbox": [
+            43,
+            733,
+            554,
+            794
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            142,
+            992
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINAR 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "13",
+        "bbox": [
+            908,
+            940,
+            925,
+            964
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            83,
+            50,
+            214,
+            129
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "评估函数",
+        "bbox": [
+            52,
+            244,
+            175,
+            307
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "h(n)",
+        "bbox": [
+            565,
+            242,
+            626,
+            311
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/e1598b4f24c61cce28932856e9d3ecdb2fd8477e0231b8d72a0a2c069080c503.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            252,
+            372,
+            795,
+            807
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "比较f(n)和f(m)大小，决定节点搜索顺序，即在Frontier表中的顺序",
+        "bbox": [
+            235,
+            833,
+            841,
+            959
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            953,
+            142,
+            992
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "header",
+        "text": "2",
+        "bbox": [
+            15,
+            61,
+            39,
+            118
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            181
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "page_number",
+        "text": "1414",
+        "bbox": [
+            907,
+            937,
+            957,
+            968
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            83,
+            50,
+            214,
+            127
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索：一种最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            79,
+            214,
+            440,
+            272
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "code_body": "functionBEsT-FIRsT-SEARCH(problem,f)returns一个解节点或failure  \nnode+NODE(STATE=prOblem.INITIAL)  \nfrontier←一个以f排序的优先队列， 其中一个元素为node  \nreached←一个查找表，其中一个条目的键为problem.INrrIAL，值为node  \nwhile not Is-EMPTY(frontier) do  \nnode←PoP(frontier)  \nif problem.Is-GoAL(node.STATE) thenreturn node  \nforeach child in ExpAND(problem,node)do  \ns←child.STATE  \nif s不在reached中 or child.PATH-CosT<reached[s].PATH-CosT then  \nreached[s]←child  \n将child添加到frontier中  \nreturnfailure",
+        "bbox": [
+            217,
+            327,
+            807,
+            957
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            181
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "page_number",
+        "text": "15",
+        "bbox": [
+            908,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            84,
+            50,
+            214,
+            127
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            80,
+            214,
+            177,
+            272
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "function BEsT-FIRsT-SEARCH(problem,f) returns一个解节点或failurenode ←NODE(STATE=problem.INITIAL)frontier←一个以f排序的优先队列，其中一个元素为nodereached←一个查找表，其中一个条目的键为problem.INITIAL，值为nodewhile not Is-EMPTY(frontier) donode ←PoP(frontier)if problem.Is-GoAL(node.STATE) then return nodefor each child in ExPAND(problem,node) dos ←child.STATEif s不在reached中 or child.PATH-CosT<reached[s].PArH-CosT thenreached[s]←child将child添加到frontier中return failure",
+        "bbox": [
+            123,
+            387,
+            568,
+            950
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "image",
+        "img_path": "images/66fe39a6284e83202eae5aa854968415623ad4d1111fd6eb7d802301ca9df6a1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            647,
+            194,
+            952,
+            522
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "h(S)=6   \nh(A)=3   \nh(B)=1   \nh(C)=8   \nh(D)=13   \nh(E)=4   \nh(F)=7   \nh(G)=12   \nh(T)-0",
+        "bbox": [
+            657,
+            635,
+            719,
+            762
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            762,
+            635,
+            833,
+            762
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            875,
+            633,
+            948,
+            759
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            142,
+            992
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "header",
+        "text": "2",
+        "bbox": [
+            15,
+            61,
+            39,
+            118
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "page_number",
+        "text": "16",
+        "bbox": [
+            908,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            85,
+            50,
+            214,
+            127
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "image",
+        "img_path": "images/69b6f6d62a91e29eadbdb7ee4a065fb34f79d3374b9af1e8f63640038ce54cf2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            42,
+            453,
+            346,
+            779
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "h(S)=6",
+        "bbox": [
+            39,
+            809,
+            98,
+            848
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "h(A)=3",
+        "bbox": [
+            39,
+            851,
+            101,
+            890
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "h(C)=8",
+        "bbox": [
+            144,
+            807,
+            207,
+            848
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "h(F)=7",
+        "bbox": [
+            257,
+            805,
+            317,
+            846
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "h(D)=13",
+        "bbox": [
+            142,
+            851,
+            214,
+            890
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "h(G)=12",
+        "bbox": [
+            257,
+            848,
+            330,
+            887
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "h(B)=1",
+        "bbox": [
+            39,
+            894,
+            100,
+            933
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "h(E)=4",
+        "bbox": [
+            145,
+            894,
+            207,
+            933
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "h(T)-0",
+        "bbox": [
+            257,
+            890,
+            318,
+            929
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            4,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "header",
+        "text": "2",
+        "bbox": [
+            16,
+            61,
+            39,
+            118
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            181
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "page_number",
+        "text": "17",
+        "bbox": [
+            908,
+            940,
+            923,
+            964
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            84,
+            50,
+            214,
+            127
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            80,
+            214,
+            177,
+            270
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/435ec43cad276c5359ca26f9e5c48e1b8814ab3f52376cb147b4d3dc538145c8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            165,
+            300,
+            470,
+            651
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "h(S)=6   \nh(A)=3   \nh(B)=1   \nh(C)=8   \nh(D)=13   \nh(E)=4   \nh(F)=7   \nh(G)=12   \nh(T)=0",
+        "bbox": [
+            175,
+            759,
+            237,
+            887
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            280,
+            759,
+            350,
+            887
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            393,
+            757,
+            466,
+            883
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/3e6afb9f7a6eedfa4a4d70f40882ab840a66d7e4b1e22ee36aa09b5f0832f4b7.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "bbox": [
+            514,
+            250,
+            866,
+            855
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "header",
+        "text": "2",
+        "bbox": [
+            16,
+            61,
+            38,
+            118
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            181
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "page_number",
+        "text": "18",
+        "bbox": [
+            908,
+            940,
+            925,
+            964
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            85,
+            50,
+            214,
+            129
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "A\\*: f(n)=g(n)+h(n)",
+        "bbox": [
+            79,
+            220,
+            308,
+            277
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "table",
+        "img_path": "images/e6366b3beffc008a21f117ff836683445a55575c792bf287a1929793e486eb2c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Arad</td><td>366</td><td>Mehadia</td><td>241</td></tr><tr><td>Bucharest</td><td>0</td><td>Neamt</td><td>234</td></tr><tr><td>Craiova</td><td>160</td><td>Oradea</td><td>380</td></tr><tr><td>Drobeta</td><td>242</td><td>Pitesti</td><td>100</td></tr><tr><td>Eforie</td><td>161</td><td>Rimnicu Vilcea</td><td>193</td></tr><tr><td>Fagaras</td><td>176</td><td>Sibiu</td><td>253</td></tr><tr><td>Giurgiu</td><td>77</td><td>Timisoara</td><td>329</td></tr><tr><td>Hirsova</td><td>151</td><td>Urziceni</td><td>80</td></tr><tr><td>Iasi</td><td>226</td><td>Vaslui</td><td>199</td></tr><tr><td>Lugoj</td><td>244</td><td>Zerind</td><td>374</td></tr></table>",
+        "bbox": [
+            61,
+            364,
+            398,
+            837
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "images/c72a7111e43e2810b6a83957be8d3a43828c579eb623b4604920d093a5b33747.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "bbox": [
+            443,
+            277,
+            948,
+            831
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "page_number",
+        "text": "19",
+        "bbox": [
+            908,
+            940,
+            923,
+            964
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            83,
+            50,
+            213,
+            127
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "images/3d9275ea01daed52b4251f61459e10c662f7cfffa042af0be067b4bf4f683ece.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "授诛教帅：字睁瑶"
+        ],
+        "bbox": [
+            30,
+            175,
+            601,
+            957
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "images/67683dd3b3ec6a8da94b836969237bbc9a1cc4bfc5f6692e63eb5d58ad011eb7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            628,
+            346,
+            989,
+            718
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "page_number",
+        "text": "20",
+        "bbox": [
+            907,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            83,
+            50,
+            213,
+            127
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "images/58ce5f61d23f1fe2104485cbde67b60fe2e02c48faa7697a508e5aee43fa8ab5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            45,
+            185,
+            594,
+            981
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "images/9ee7a3649b2b7068425b1de48197676f050ca0018eeceda0bda2b931f30fdf75.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "授课丁盱咄"
+        ],
+        "bbox": [
+            616,
+            350,
+            979,
+            718
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "page_number",
+        "text": "21",
+        "bbox": [
+            907,
+            942,
+            922,
+            964
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            84,
+            50,
+            214,
+            127
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "可容许性：",
+        "text_level": 2,
+        "bbox": [
+            79,
+            231,
+            192,
+            279
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "函数永远不会高估到达某个目标的代价 $\\mathbf { h } ( \\mathbf { n } ) \\leq \\mathbf { h } ^ { * } ( \\mathbf { n } )$",
+        "bbox": [
+            78,
+            337,
+            682,
+            388
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "·f(n)不会超过经过节点n的最优解的实际代价",
+        "bbox": [
+            78,
+            442,
+            587,
+            496
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "·若h(n)是可容许的，则A搜索被称为A\\*搜索，具有最优性",
+        "bbox": [
+            78,
+            550,
+            746,
+            603
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "header",
+        "text": "2",
+        "bbox": [
+            15,
+            61,
+            39,
+            118
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "page_number",
+        "text": "22",
+        "bbox": [
+            907,
+            940,
+            925,
+            964
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            83,
+            50,
+            215,
+            129
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "可容许性：",
+        "text_level": 2,
+        "bbox": [
+            78,
+            229,
+            193,
+            281
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "反证法证明最优性。假设最优路径的代价为 $\\mathbf { \\nabla } \\mathbf { C } ^ { * }$ ，但返回 $\\ b { \\mathrm { C } } > \\ b { \\mathrm { C } } ^ { * }$ ，那么最优路径上一定存在节点n未扩展。 $g ^ { * } ( n )$ 表示从起点到n的最优路径代价， $h ^ { * } ( n )$ 表示从n到最近目标的最优路径的代价。",
+        "bbox": [
+            75,
+            316,
+            910,
+            531
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "table",
+        "img_path": "images/44239ba0a7089742afb934450060675e70d6752a9f83e26ca44ea0b2e1f169b0.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=1 colspan=1> $f ( n ) > C ^ { * }$ </td><td rowspan=1 colspan=1>否则n将是已扩展节点</td></tr><tr><td rowspan=1 colspan=1> $f ( n ) = g ( n ) + h ( n )$ </td><td rowspan=1 colspan=1>根据定义</td></tr><tr><td rowspan=1 colspan=1> $f ( n ) { = } g ^ { * } ( n ) + h ( n )$ </td><td rowspan=1 colspan=1>因为n在一条最优路径上</td></tr><tr><td rowspan=1 colspan=1> $f ( n ) \\leq g ^ { * } ( n ) + h ^ { * } \\left( n \\right)$ </td><td rowspan=1 colspan=1>根据可容许行， $h ( n ) \\leq h ^ { * } ( n )$ </td></tr><tr><td rowspan=1 colspan=1> $f ( n ) \\leq C ^ { * }$ </td><td rowspan=1 colspan=1>根据定义，  $C ^ { * } { = } g ^ { * } \\left( n \\right) { + } h ^ { * } \\left( n \\right)$ </td></tr></table>",
+        "bbox": [
+            152,
+            551,
+            853,
+            829
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "第一行与最后一行矛盾，“算法返回次优路径\"的假设是错误的。",
+        "bbox": [
+            168,
+            851,
+            855,
+            905
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            2,
+            955,
+            142,
+            992
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "header",
+        "text": "2",
+        "bbox": [
+            15,
+            61,
+            39,
+            118
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            994,
+            179
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "page_number",
+        "text": "23",
+        "bbox": [
+            907,
+            940,
+            925,
+            964
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            84,
+            50,
+            214,
+            129
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "一致性:",
+        "text_level": 2,
+        "bbox": [
+            78,
+            211,
+            168,
+            261
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "·对于任意节点n和通过动作a生成的后继结点n'，从n到达目标的估计代价不大于从n到n'的单步代价与从n到达目标的估计代价之和： $\\mathrm { h ( n ) } \\leq$ $\\operatorname { c } ( \\mathrm { n , a , n ^ { \\prime } } ) + \\mathrm { h } ( \\mathrm { n ^ { \\prime } } )$",
+        "bbox": [
+            78,
+            288,
+            926,
+            505
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "·从n到达目标的估计代价是所有从n到达目标的代价的下界",
+        "bbox": [
+            78,
+            529,
+            737,
+            585
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "images/99e6ff7066d26ae9c1aa184b0743051dbaac5338e8160daaa54296f69c1f68c9.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "bbox": [
+            696,
+            631,
+            910,
+            851
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索",
+        "text_level": 2,
+        "bbox": [
+            85,
+            50,
+            214,
+            127
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "启发式函数- -直线距离：具有可容许性和一致性",
+        "text_level": 2,
+        "bbox": [
+            78,
+            211,
+            634,
+            261
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "·将直线距离作为启发函数h(n)，则启发函数一定是可容的，因为其不会高估开销代价",
+        "bbox": [
+            78,
+            318,
+            926,
+            451
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "·g(n)是从起点到节点n的实际代价开销，且f(n)=g(n)+h(n)，因此f(n)不会高估经过节点n路径的实际开销",
+        "bbox": [
+            78,
+            505,
+            925,
+            638
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "$\\mathrm { h ( n ) } \\le \\mathrm { c ( n , a , n ^ { \\prime } ) } + \\mathrm { h ( n ^ { \\prime } ) }$ 构成三角不等式，满足一致性",
+        "bbox": [
+            78,
+            694,
+            708,
+            746
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "header",
+        "text": "2",
+        "bbox": [
+            15,
+            61,
+            39,
+            118
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINAR 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "page_number",
+        "text": "25",
+        "bbox": [
+            907,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "3 内存受限搜索",
+        "text_level": 2,
+        "bbox": [
+            15,
+            50,
+            337,
+            129
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "递归最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            79,
+            244,
+            317,
+            301
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "模拟最佳优先搜索，但仅使用线性空间",
+        "bbox": [
+            79,
+            335,
+            546,
+            385
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "f\\_limit：从历史扩展节点得到的最优备选路径的f值",
+        "bbox": [
+            79,
+            414,
+            686,
+            466
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "若当前节点的f值超过了f\\_limit，递归将回到备选路径上",
+        "bbox": [
+            79,
+            494,
+            735,
+            546
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "递归回溯时，用当前节点的子节点的最佳f值替换更新当前节点的f值，能记住遗忘的最佳子节点，用于决定以后是否需要重新扩展该子树",
+        "bbox": [
+            79,
+            574,
+            927,
+            707
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINAR 林",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "page_number",
+        "text": "26",
+        "bbox": [
+            907,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "3 内存受限搜索",
+        "text_level": 2,
+        "bbox": [
+            15,
+            50,
+            337,
+            129
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "递归最佳优先搜索",
+        "text_level": 2,
+        "bbox": [
+            78,
+            196,
+            317,
+            253
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "code_body": "function RECURsIVE-BEsT-FIRST-SEARCH(problem) returns一个解或者failure   \nsolution,fvalue+RBFS(problem,NoDE(problem.INITIAL),)   \nreturn solution   \nfunctionRBFS(problem,node,f\\_limit)returns一个解或failure，以及一个新的f代价限制   \nif problem.Is-GoAL(node.STATE) thenreturn node   \nsuccesSOrs+LIST(ExPAND(node))   \nif successors为空then return failure,   \nforeach sin successors do //用前一次搜索中的值更新f   \ns.f←max(s.PArH-Cosr+ h(s), node.f)   \nwhile true do   \nbest←successors中f值最低的节点   \nif best.f>f\\_limit thenreturnfailure,best.f   \nalternative←successors中第二低的f值   \nresult,best.f←RBFS(problem,best,min(f\\_limit,alternative))   \nifresult≠failure thenreturnresult,best.f",
+        "bbox": [
+            211,
+            261,
+            867,
+            996
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            181
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "page_number",
+        "text": "27",
+        "bbox": [
+            907,
+            942,
+            923,
+            964
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "3 内存受限搜索",
+        "text_level": 2,
+        "bbox": [
+            15,
+            50,
+            337,
+            129
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "table",
+        "img_path": "images/8ed9443b411cd0f7acbee797fd3cf2a370bdae4bcde54bd39e915c0781e4af25.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Arad</td><td>366</td><td>Mehadia Neamt</td><td>241 234</td></tr><tr><td>Bucharest</td><td>0</td><td> Oradea</td><td>380</td></tr><tr><td>Craiova</td><td>160</td><td>Pitesti</td><td>100</td></tr><tr><td>Drobeta Eforie</td><td>242</td><td> Rimnicu Vilcea</td><td></td></tr><tr><td>Fagaras</td><td>161 176</td><td>Sibiu</td><td>193 253</td></tr><tr><td>Giurgiu</td><td></td><td>Timisoara</td><td>329</td></tr><tr><td>Hirsova</td><td>77</td><td>Urziceni</td><td></td></tr><tr><td>Iasi</td><td>151</td><td>Vaslui</td><td>80</td></tr><tr><td></td><td>226</td><td></td><td>199</td></tr><tr><td>Lugoj</td><td>244</td><td>Zerind</td><td>374</td></tr></table>",
+        "bbox": [
+            0,
+            425,
+            580,
+            824
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "image",
+        "img_path": "images/6b6161683215682309c78a91778a3196d89a2d94730f3b4f3e332761adb8a089.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "bbox": [
+            579,
+            270,
+            998,
+            718
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINAR 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "page_number",
+        "text": "28",
+        "bbox": [
+            907,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "3内存受限搜索",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            337,
+            127
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "images/711ee350e0ed357eaece3ceef541c714080112f45596d0dac0b314bada80ad44.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "bbox": [
+            205,
+            161,
+            804,
+            964
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "page_number",
+        "text": "30",
+        "bbox": [
+            907,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "3内存受限搜索",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            337,
+            127
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/2058edc985dd5ad319b72c9f6beb6be67ebaa3024c5fb20f2716e5a3d98e94bf.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "bbox": [
+            137,
+            250,
+            829,
+            761
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "page_number",
+        "text": "31",
+        "bbox": [
+            907,
+            942,
+            922,
+            964
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "4 启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            296,
+            127
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "启发式函数的准确性",
+        "bbox": [
+            79,
+            212,
+            365,
+            266
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "利用松弛问题设计启发式函数",
+        "bbox": [
+            79,
+            300,
+            473,
+            353
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "利用子问题设计启发式函数",
+        "bbox": [
+            79,
+            385,
+            446,
+            440
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "本节以八数码问题为例，探讨启发式函数的一般性质",
+        "bbox": [
+            78,
+            559,
+            707,
+            614
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINAR 林",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "page_number",
+        "text": "32",
+        "bbox": [
+            907,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "4 启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            296,
+            127
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "启发式函数的准确性",
+        "text_level": 2,
+        "bbox": [
+            78,
+            214,
+            345,
+            270
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "·描述启发式函数质量的方法：有效分支因子b\\*",
+        "bbox": [
+            78,
+            303,
+            617,
+            355
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "·若A\\*算法的解路径长度为d，生成结点数为N，则b\\*是深度为d的均衡搜索 树生成N+1个节点的有效分支因子，满足 $1 + \\mathrm { b } ^ { * } + \\mathrm { b } ^ { * 2 } + \\ldots + \\mathrm { b } ^ { * \\mathrm { d } } = \\mathrm { N } + 1$",
+        "bbox": [
+            78,
+            462,
+            925,
+            596
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "·b\\*越小越好（N越小越好），最好情况为1",
+        "bbox": [
+            78,
+            622,
+            565,
+            675
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "目标：设计启发式函数，使得b\\*尽可能的小",
+        "bbox": [
+            78,
+            703,
+            587,
+            755
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "page_number",
+        "text": "33",
+        "bbox": [
+            907,
+            940,
+            925,
+            964
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "4启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            296,
+            129
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "例：八数码问题",
+        "text_level": 2,
+        "bbox": [
+            78,
+            214,
+            288,
+            272
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "·一个3×3的棋盘上有8个数字滑块和一个空格。与空格相邻的滑块可以滑动到空格中 (状态数181400，15数码的状态10万亿)",
+        "bbox": [
+            77,
+            303,
+            923,
+            437
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "游戏目标是要达到一个特定的状态",
+        "bbox": [
+            78,
+            462,
+            488,
+            516
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "image",
+        "img_path": "images/9e96caf46b22a8f4b23fecb5f90deda23f3528c14219b35e1bd4e8f44d4f2489.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "开始状态"
+        ],
+        "bbox": [
+            287,
+            555,
+            472,
+            894
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "image",
+        "img_path": "images/2135bb24fc7c134c58fce03953365997efd56e0d5c8ed6807b26888ed0dd679b.jpg",
+        "image_caption": [
+            "目标状态"
+        ],
+        "image_footnote": [],
+        "bbox": [
+            531,
+            555,
+            715,
+            894
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "page_number",
+        "text": "34",
+        "bbox": [
+            907,
+            940,
+            925,
+            964
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "4 启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            296,
+            127
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "两个常用的启发式函数",
+        "text_level": 2,
+        "bbox": [
+            79,
+            214,
+            375,
+            272
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "h1=不在位的滑块数（8)",
+        "bbox": [
+            79,
+            303,
+            372,
+            353
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "·h2=所有滑块到其目标位置的Manhattan距离和（18)",
+        "bbox": [
+            78,
+            383,
+            667,
+            435
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "·h1和h2均为可容许的，但求解性能不同 (最优解26)",
+        "bbox": [
+            79,
+            462,
+            671,
+            516
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "image",
+        "img_path": "images/64dbbcc05bf456976230098b8c2bc31a6a7151b6aea78a7b328198abd3ed8b91.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "开始状态"
+        ],
+        "bbox": [
+            302,
+            555,
+            488,
+            894
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "image",
+        "img_path": "images/4647c39d6a44578446f34751208f1dab3b3babdb656ae9fad824ac8b456dbf29.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "目标状态",
+            "授课教师：李静瑶"
+        ],
+        "bbox": [
+            546,
+            555,
+            731,
+            894
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINAR 林",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "page_number",
+        "text": "35",
+        "bbox": [
+            907,
+            940,
+            925,
+            964
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "4启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            296,
+            129
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "table",
+        "img_path": "images/e372cecbef6740dfa1f63bf5191645076965a1b8d70550d76933b60c07c55d41.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "授课教师：李静瑶"
+        ],
+        "table_body": "<table><tr><td colspan=\"3\">搜索代价：生成的节点数</td><td colspan=\"3\">有效分支因子</td></tr><tr><td>d</td><td>BFS</td><td>A(h1) A(h2）</td><td>BFS</td><td> $\\dot { \\mathrm { \\bf A ^ { \\prime } } } ( h _ { 1 } )$ </td><td> $\\dot { \\mathrm { A ^ { ' } } } ( h _ { 2 } )$ </td></tr><tr><td>6</td><td>128</td><td>24</td><td>19</td><td>2.01</td><td>1.42 1.34</td></tr><tr><td>8</td><td>368</td><td>48 31</td><td>1.91</td><td>1.40</td><td>1.30</td></tr><tr><td>10</td><td>1033</td><td>116 48</td><td>1.85</td><td>1.43</td><td>1.27</td></tr><tr><td>12</td><td>2672</td><td>279</td><td>84 1.80</td><td>1.45</td><td>1.28</td></tr><tr><td>14</td><td>6783</td><td>678</td><td>174 1.77</td><td>1.47</td><td>1.31</td></tr><tr><td>16</td><td>17 270</td><td>1683</td><td>364</td><td>1.74</td><td>1.48 1.32</td></tr><tr><td>18</td><td>41 558</td><td>4102</td><td>751</td><td>1.72 1.49</td><td>1.34</td></tr><tr><td>20</td><td>91493</td><td>9905</td><td>1318</td><td>1.69</td><td>1.50 1.34</td></tr><tr><td>22</td><td>175 921</td><td>22 955</td><td>2548</td><td>1.66 1.50</td><td>1.34</td></tr><tr><td>24</td><td>290082</td><td>53039</td><td>5733</td><td>1.62 1.50</td><td>1.36</td></tr><tr><td>26</td><td>395355</td><td>110 372</td><td>10080</td><td>1.58</td><td>1.50 1.35</td></tr><tr><td>28</td><td>463234</td><td>202 565</td><td>22055</td><td>1.53</td><td>1.49 1.36</td></tr></table>",
+        "bbox": [
+            129,
+            188,
+            869,
+            922
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "page_number",
+        "text": "36",
+        "bbox": [
+            907,
+            940,
+            925,
+            964
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "4 启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            296,
+            127
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "占优",
+        "text_level": 2,
+        "bbox": [
+            81,
+            237,
+            142,
+            296
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "·对于任意结点n, $\\mathtt { h } _ { 2 } ( \\mathtt { n } ) \\ge \\mathtt { h } _ { 1 } ( \\mathtt { n } )$ ，称 $\\hphantom { 0 } \\mathrm { I h } _ { 2 }$ 比 $\\mathrm { \\Delta } \\mathrm { h } _ { 1 }$ 占优",
+        "bbox": [
+            78,
+            353,
+            603,
+            409
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "·使用 $\\mathbf { h } _ { 2 }$ 的 $\\mathrm { A } ^ { \\mathrm { i } }$ \\*永远不会比使用 $\\mathrm { h } _ { 1 }$ 的 $\\mathbf { A } ^ { * }$ 扩展更多的节点",
+        "bbox": [
+            78,
+            461,
+            673,
+            514
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "·每个满足 $\\mathbf { f } ( \\mathbf { n } ) { < } \\mathbf { C } ^ { * }$ 的节点n必将被扩展，且f(n)=g(n)+h(n)，即每个满足h ${ \\mathrm { ( n ) { < } C ^ { * } { \\mathrm { - } } g ( n ) } }$ 的节点n必将被扩展",
+        "bbox": [
+            77,
+            566,
+            923,
+            729
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "·采用 $\\mathbf { h } _ { 2 }$ 的 $\\mathrm { A }$ \\*搜索扩展的结点必将被采用 $\\mathrm { h } _ { 1 }$ 的 $\\mathrm { A } ^ { \\mathrm { i } }$ \\*搜索扩展",
+        "bbox": [
+            78,
+            779,
+            723,
+            835
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINAR 林",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "page_number",
+        "text": "37",
+        "bbox": [
+            907,
+            940,
+            923,
+            964
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "4启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            296,
+            129
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "从松弛问题出发设计启发式函数",
+        "text_level": 2,
+        "bbox": [
+            78,
+            212,
+            491,
+            272
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "松弛问题：减少动作限制的问题",
+        "bbox": [
+            78,
+            303,
+            471,
+            355
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "八数码问题中，若允许滑块任意移动位置，而不只是移动到相邻位置，则h1是最短解的准确长度",
+        "bbox": [
+            112,
+            383,
+            933,
+            516
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "八数码问题中，若允许滑块向任意方向移动，甚至移动到被其它滑块",
+        "bbox": [
+            113,
+            542,
+            925,
+            596
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "占据的位置，则h2是最短解的准确长度",
+        "bbox": [
+            154,
+            622,
+            583,
+            675
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "image",
+        "img_path": "images/add5e9162e2109e3f6039f00d2f2a659e803b202a50fd58ce70a5b9d94b99bfa.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "开始状态",
+            "授课教师：李静瑶"
+        ],
+        "bbox": [
+            621,
+            653,
+            769,
+            931
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "image",
+        "img_path": "images/7a9a1d7193ceecf6caf8b152215f630bdb57b9271b9a74edd84e7fd681975371.jpg",
+        "image_caption": [
+            "目标状态"
+        ],
+        "image_footnote": [],
+        "bbox": [
+            816,
+            653,
+            963,
+            931
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINAR 林",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "4 启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            296,
+            127
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "原问题与松弛问题的关联",
+        "text_level": 2,
+        "bbox": [
+            79,
+            214,
+            405,
+            272
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "减少动作限制导致状态空间图中边可能增加，故减少动作限制的松弛问题的状态空间图是原问题的状态空间图的超图",
+        "bbox": [
+            78,
+            303,
+            925,
+            437
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "原问题的最优解是松弛问题的候选解，未必是松弛问题的最优解",
+        "bbox": [
+            78,
+            462,
+            821,
+            516
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "松弛问题由于增加的边可能导致捷径，可能存在更好的解",
+        "bbox": [
+            78,
+            542,
+            747,
+            596
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "松弛问题的最优解代价可以用作设计原问题的一个可容许的启发式函数",
+        "bbox": [
+            78,
+            703,
+            897,
+            755
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINAR 林",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "page_number",
+        "text": "39",
+        "bbox": [
+            907,
+            942,
+            923,
+            964
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "4启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            296,
+            129
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "例：八数码问题的松弛问题",
+        "text_level": 2,
+        "bbox": [
+            78,
+            214,
+            433,
+            272
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "原问题：如果方格X与方格Y相邻，且Y是空格，那么滑块可以从方格X移动到方格Y",
+        "bbox": [
+            78,
+            303,
+            925,
+            435
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "三个松弛问题：",
+        "bbox": [
+            79,
+            544,
+            281,
+            594
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "如果方格X与方格Y相邻，那么滑块可以从方格X移动到方格Y",
+        "bbox": [
+            113,
+            622,
+            829,
+            675
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "如果方格Y是空格，那么滑块可以从方格X移动到方格Y",
+        "bbox": [
+            113,
+            703,
+            761,
+            755
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "滑块可以从方格X移动到方格Y",
+        "bbox": [
+            113,
+            783,
+            494,
+            835
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "page_number",
+        "text": "40",
+        "bbox": [
+            908,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "4启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            296,
+            129
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "新的启发式函数的构造：",
+        "bbox": [
+            77,
+            212,
+            386,
+            272
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "可容许的启发式集合 $\\begin{array} { r } { \\mathtt { h } _ { 1 } , \\mathtt { h } _ { 2 } , \\mathtt { h } _ { 3 } . } \\end{array}$ 可以求解同一个问题，但差别不明显",
+        "bbox": [
+            77,
+            305,
+            923,
+            457
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "equation",
+        "img_path": "images/6f3e5caaa5cd013af6e32f36c4a8afd845a85b101c3bda9d8dc0c74bdd64de2b.jpg",
+        "text": "$$\nh ( n ) = \\operatorname* { m a x } \\{ h _ { 1 } ( n ) , \\cdots , h _ { n } ( n ) \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            345,
+            446,
+            652,
+            503
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "$\\mathtt { h } _ { 1 } , \\mathtt { h } _ { 2 } , \\mathtt { h } _ { 3 }$ ...均可容许，则h可容许",
+        "bbox": [
+            78,
+            587,
+            514,
+            651
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "h $\\mathtt { L h } _ { 1 } \\mathtt { h } _ { 2 } , \\mathtt { h } _ { 3 }$ ...均占优",
+        "bbox": [
+            78,
+            679,
+            377,
+            746
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            2,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "page_number",
+        "text": "41",
+        "bbox": [
+            907,
+            942,
+            923,
+            964
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "4 启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            51,
+            295,
+            127
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "利用子问题的最优解代价设计启发式函数",
+        "text_level": 2,
+        "bbox": [
+            78,
+            214,
+            608,
+            272
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "image",
+        "img_path": "images/26b75dbbed558cc79e3e3a2e68ffe27bdb38b5fd1b437e483cb70c6e827b5043.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "开始状态"
+        ],
+        "bbox": [
+            271,
+            361,
+            488,
+            757
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "image",
+        "img_path": "images/7f2eb79f4fb16f7a0964640773104559a26724c55fee047c8f0202b4a4f62f8f.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "目标状态",
+            "授课教师：李静瑶"
+        ],
+        "bbox": [
+            556,
+            361,
+            771,
+            757
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA R 林 水",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "page_number",
+        "text": "42",
+        "bbox": [
+            908,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "4启发式函数",
+        "text_level": 2,
+        "bbox": [
+            16,
+            50,
+            296,
+            129
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "基于模式数据库设计启发式函数",
+        "text_level": 2,
+        "bbox": [
+            78,
+            212,
+            491,
+            272
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "对所有可能的子问题实例存储解代价，建立模式数据库",
+        "bbox": [
+            78,
+            303,
+            722,
+            355
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "对于原问题的每个完备状态，通过在模式数据库中查找相应的子问题，返回子问题的最优解代价作为启发式函数值",
+        "bbox": [
+            77,
+            383,
+            925,
+            516
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "每个数据库对应一个可容许的启发式函数hpB",
+        "bbox": [
+            78,
+            544,
+            607,
+            598
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "可以通过max设计新的可容许的启发式函数",
+        "bbox": [
+            78,
+            622,
+            590,
+            675
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "不同子问题如果定义了不相交模式数据库，则启发式函数相加仍是可容许的",
+        "bbox": [
+            78,
+            703,
+            925,
+            835
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "授课教师：李静瑶",
+        "bbox": [
+            3,
+            955,
+            141,
+            992
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA林",
+        "bbox": [
+            896,
+            3,
+            993,
+            181
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "page_number",
+        "text": "43",
+        "bbox": [
+            908,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索实例",
+        "text_level": 2,
+        "bbox": [
+            86,
+            50,
+            297,
+            129
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "例：八数码问题",
+        "text_level": 2,
+        "bbox": [
+            78,
+            214,
+            288,
+            272
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "一个3×3的棋盘上有8个数字棋子和一个空格。与空格相邻的棋子可以滑 动到空格中。",
+        "bbox": [
+            77,
+            303,
+            923,
+            437
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "游戏目标是要达到一个特定的状态",
+        "bbox": [
+            78,
+            462,
+            496,
+            516
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "table",
+        "img_path": "images/be6c1509eff9ee85aceaaa81258ae497c5d4b3f4576d951d6d089eba0acebe82.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "初始状态"
+        ],
+        "table_body": "<table><tr><td>4</td><td>3</td><td>1</td></tr><tr><td></td><td>5</td><td>2</td></tr><tr><td>6</td><td>7</td><td>8</td></tr></table>",
+        "bbox": [
+            282,
+            548,
+            444,
+            835
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "image",
+        "img_path": "images/e600dad7a4c7b8a615f0f8a4abc0f2fcc8ba285ae6be2284f34337b8a0576b2d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            492,
+            661,
+            552,
+            725
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "table",
+        "img_path": "images/3237fb469d010ebd648c24fd8dc1f78048a4044f7f5c91efa6983bbaeca72a1f.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "目标状态",
+            "授课教师：李静瑶"
+        ],
+        "table_body": "<table><tr><td></td><td>1</td><td>2</td></tr><tr><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td></tr></table>",
+        "bbox": [
+            594,
+            548,
+            757,
+            835
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "page_number",
+        "text": "44",
+        "bbox": [
+            907,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "A\\*搜索实例",
+        "text_level": 2,
+        "bbox": [
+            86,
+            50,
+            297,
+            129
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "例：八数码问题",
+        "text_level": 2,
+        "bbox": [
+            81,
+            214,
+            291,
+            272
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "评估函数f(n)=g(n)+h(n)",
+        "bbox": [
+            82,
+            303,
+            364,
+            355
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "·g(n)表示结点n目前经过的移动次数，即其在搜索树中的深度h(n)表示每个数字棋子与目标位置的距离之和，满足可容许性和一致性",
+        "bbox": [
+            82,
+            383,
+            928,
+            518
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "table",
+        "img_path": "images/f159026376d64f04e05d83e30e83bdc6938f565258ea3f22d44e778936bed3a4.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "初始状态"
+        ],
+        "table_body": "<table><tr><td>4</td><td>3</td><td>1</td></tr><tr><td></td><td>5</td><td>2</td></tr><tr><td>6</td><td>7</td><td>8</td></tr></table>",
+        "bbox": [
+            282,
+            548,
+            444,
+            835
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "image",
+        "img_path": "images/fb85e1d0ad7ead87ec8814163d8fba0c053fb971a8ece23c837061b652fa46d5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            493,
+            661,
+            551,
+            724
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "table",
+        "img_path": "images/b91343ba6f863a3933bc3539d57188a8a274e00ca682e77a4304f620a0106b81.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "目标状态",
+            "授课教师：李静瑶"
+        ],
+        "table_body": "<table><tr><td></td><td>1</td><td>2</td></tr><tr><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td></tr></table>",
+        "bbox": [
+            594,
+            548,
+            757,
+            835
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "header",
+        "text": "1946 CHINA 林 大",
+        "bbox": [
+            896,
+            3,
+            993,
+            179
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "page_number",
+        "text": "45",
+        "bbox": [
+            907,
+            942,
+            925,
+            964
+        ],
+        "page_idx": 42
+    }
+]

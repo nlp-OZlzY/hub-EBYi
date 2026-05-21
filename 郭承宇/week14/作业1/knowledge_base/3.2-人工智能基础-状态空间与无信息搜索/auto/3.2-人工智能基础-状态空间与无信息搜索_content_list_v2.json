@@ -1,0 +1,5123 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "第3章状态空间与无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                95,
+                361,
+                907,
+                479
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                247,
+                729,
+                586,
+                811
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                2,
+                955,
+                142,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ERSITY. 1946 1 CHINA cience W 1976 林"
+                    }
+                ]
+            },
+            "bbox": [
+                41,
+                55,
+                255,
+                235
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "人工智能引论"
+                    }
+                ]
+            },
+            "bbox": [
+                559,
+                94,
+                903,
+                188
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "1"
+                    }
+                ]
+            },
+            "bbox": [
+                914,
+                942,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "录"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                23,
+                329,
+                84,
+                429
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1 问题求解智能体"
+                    }
+                ]
+            },
+            "bbox": [
+                264,
+                157,
+                588,
+                233
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2 问题实例"
+                    }
+                ]
+            },
+            "bbox": [
+                260,
+                292,
+                475,
+                366
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3搜索算法"
+                    }
+                ]
+            },
+            "bbox": [
+                259,
+                429,
+                476,
+                503
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索策略"
+                    }
+                ]
+            },
+            "bbox": [
+                263,
+                566,
+                588,
+                640
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "无信息搜索 盲目搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                79,
+                214,
+                442,
+                272
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "旻除了问题定义中提供的状态信息之外，没有任何附加信息"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                307,
+                886,
+                368
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "搜索算法只需生成后继、区分目标状态与非目标状态，按 照节点扩展顺序分类"
+                    }
+                ]
+            },
+            "bbox": [
+                113,
+                400,
+                903,
+                553
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "有信息搜索 启发式搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                587,
+                471,
+                646
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "搜索算法知道一个状态是否比其它状态“更有希望”接近目标"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                679,
+                903,
+                833
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                141,
+                992
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "3"
+                    }
+                ]
+            },
+            "bbox": [
+                914,
+                942,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                79,
+                211,
+                208,
+                261
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "广度优先搜索 (宽度优先搜索)"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                290,
+                456,
+                342
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "一致代价搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                370,
+                271,
+                422
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "深度优先搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                450,
+                271,
+                501
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "深度受限搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                529,
+                271,
+                581
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "迭代加深搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                611,
+                271,
+                661
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "双向搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                690,
+                221,
+                740
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                4,
+                955,
+                141,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "4"
+                    }
+                ]
+            },
+            "bbox": [
+                914,
+                942,
+                925,
+                962
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                17,
+                51,
+                293,
+                127
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "广度优先搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                214,
+                258,
+                270
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "扩展最浅层的没有被扩展的节点"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                303,
+                470,
+                355
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/73d6dbee9fed5cd924635930bc0393fb526793178c605df8967fc48e8139bdb1.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                344,
+                461,
+                629,
+                792
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5"
+                    }
+                ]
+            },
+            "bbox": [
+                914,
+                942,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                17,
+                51,
+                293,
+                127
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "广度优先搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                214,
+                258,
+                270
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "扩展最浅层的没有被扩展的节点"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                303,
+                470,
+                353
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/06034ec57a83f2fd6f1caa614f6114498c540030f1e3c5b22553c68e5abc1ed6.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                347,
+                462,
+                628,
+                792
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "6"
+                    }
+                ]
+            },
+            "bbox": [
+                915,
+                942,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                17,
+                50,
+                293,
+                127
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "广度优先搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                214,
+                258,
+                270
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "扩展最浅层的没有被扩展的节点"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                303,
+                470,
+                353
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0c256898c665c9aaea236b2f6b8cfe54cf8ee4ed0fdc833abba51fd02e926b3c.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                347,
+                466,
+                627,
+                792
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "7"
+                    }
+                ]
+            },
+            "bbox": [
+                914,
+                942,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                17,
+                51,
+                293,
+                127
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "广度优先搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                214,
+                258,
+                270
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "扩展最浅层的没有被扩展的节点"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                303,
+                470,
+                353
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3d04fa2a26cb4ee2085eb600ac3ce012adeb7395c62c69e3feab36b9116d4039.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                321,
+                468,
+                627,
+                794
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "8"
+                    }
+                ]
+            },
+            "bbox": [
+                914,
+                942,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                15,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "广度优先搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                34,
+                168,
+                214,
+                227
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "function BREADTH-FIRST-SEARCH(problem)returns一个解节点或failure"
+                    }
+                ]
+            },
+            "bbox": [
+                39,
+                244,
+                618,
+                285
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "node←NODE(problem.INTTIAL)"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                296,
+                309,
+                337
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "if problem.Is-GoAL(node.STATE) thenreturn node边界frontier←一个FIFO队列，其中一个元素为node"
+                    }
+                ]
+            },
+            "bbox": [
+                9,
+                346,
+                466,
+                437
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "reached←{problem.INITIAL}"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                446,
+                288,
+                488
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "while not Is-EMPTY(frontier) do"
+                    }
+                ]
+            },
+            "bbox": [
+                59,
+                498,
+                314,
+                537
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "node←PoP(frontier)"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                550,
+                253,
+                587
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "foreach child in ExPAND(problem,node) do"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                598,
+                429,
+                638
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "s ←child.STATE"
+                    }
+                ]
+            },
+            "bbox": [
+                97,
+                650,
+                230,
+                685
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "if problem.Is-GoAL(s) thenreturn child"
+                    }
+                ]
+            },
+            "bbox": [
+                98,
+                698,
+                419,
+                738
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "if s不在reached中then"
+                    }
+                ]
+            },
+            "bbox": [
+                98,
+                748,
+                291,
+                787
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "将s添加到reached"
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                796,
+                273,
+                837
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "将child添加到frontier"
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                846,
+                301,
+                888
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "return failure"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                900,
+                196,
+                938
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                142,
+                992
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "已达：任何已经生成过节点的状态都称为已达（reached）状态（无论该节点是否被扩展)"
+                    }
+                ]
+            },
+            "bbox": [
+                659,
+                203,
+                952,
+                329
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/22b9f846c4b9e1cd04e5f0feb5168f933171a07ea305138288a8d22a5db622fe.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                502,
+                362,
+                906,
+                792
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "9"
+                    }
+                ]
+            },
+            "bbox": [
+                914,
+                942,
+                923,
+                962
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                293,
+                127
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "广度优先搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                214,
+                258,
+                270
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/620ff94d6540c9974d80903e50096e0dffd0fd6e72c5b561a1968ddf748dae2f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                120,
+                203,
+                719,
+                990
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "11"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                942,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "广度优先搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                214,
+                258,
+                270
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "完备性：算法完备"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                303,
+                311,
+                353
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "最优性：当动作代价相同时，算法最优"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                383,
+                537,
+                435
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "时间复杂度："
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                544,
+                246,
+                594
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "1 + b + b ^ { 2 } + b ^ { 3 } + \\cdots + b ^ { d } = 0 ( b ^ { d } )",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/4114587ed6beb52588ee9cb971464fa114544131eac68a3bec5226559cd57ca5.jpg"
+                }
+            },
+            "bbox": [
+                309,
+                622,
+                686,
+                675
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "空间复杂度： "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0 ( b ^ { d } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "个节点"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                705,
+                403,
+                757
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(b-分支因子，d-搜索深度，目标节点深度)"
+                    }
+                ]
+            },
+            "bbox": [
+                255,
+                785,
+                741,
+                838
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                141,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "14"
+                    }
+                ]
+            },
+            "bbox": [
+                908,
+                942,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "广度优先搜索的时空代价"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                77,
+                212,
+                404,
+                272
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/5be5a88e7c66bf14660599f9a635f1dbc4edece0b6805bf4745d0d30a3d7b318.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "图3.13宽度优先搜索的时间和内存代价。假设：分支因子为b=10；1000000个结点/秒；1000字节/结点"
+                    }
+                ],
+                "html": "<table><tr><td>Depth</td><td>Nodes</td><td>Time</td><td>Memory</td></tr><tr><td>2</td><td>110</td><td>.11 milliseconds</td><td>107 kilobytes</td></tr><tr><td>4</td><td>11,110</td><td>11 milliseconds</td><td>10.6 megabytes</td></tr><tr><td>6</td><td> $1 0 ^ { 6 }$ </td><td>1.1 seconds</td><td>gigabyte</td></tr><tr><td>8</td><td> $1 0 ^ { 8 }$ </td><td>2 minutes</td><td>103 gigabytes</td></tr><tr><td>10</td><td> $1 0 ^ { 1 0 }$ </td><td>3 hours</td><td>10 terabytes</td></tr><tr><td>12</td><td> $1 0 ^ { 1 2 }$ </td><td>13 days</td><td>1 petabyte</td></tr><tr><td>14</td><td> $1 0 ^ { 1 4 }$ </td><td>3.5 years</td><td>99 petabytes</td></tr><tr><td>16</td><td> $1 0 ^ { 1 6 }$ </td><td>350 years</td><td>10 exabytes</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                165,
+                312,
+                821,
+                692
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "一般来说，指数级复杂性的搜索问题无法通过无信息搜索求解"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                89,
+                837,
+                770,
+                890
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                142,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINA 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                181
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "15"
+                    }
+                ]
+            },
+            "bbox": [
+                908,
+                940,
+                925,
+                966
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                293,
+                127
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "一致代价搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                200,
+                258,
+                255
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·扩展路径代价最小的节点"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                333,
+                400,
+                385
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "function UNIFORM-CosT-SEARCH(problem)returns一个解节点或failurereturn BEST-FIRST-SEARCH(problem,PATH-COST)"
+                    }
+                ]
+            },
+            "bbox": [
+                175,
+                531,
+                846,
+                642
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                141,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINA R 林 水"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "16"
+                    }
+                ]
+            },
+            "bbox": [
+                908,
+                942,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                127
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "一致代价搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                200,
+                258,
+                255
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0fe4dc5adbc77f11aadfa0a4ef7a3e6b2f81927568779d5fb48ea054c47b4379.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                288,
+                783,
+                883
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "17"
+                    }
+                ]
+            },
+            "bbox": [
+                908,
+                942,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                127
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "一致代价搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                198,
+                258,
+                257
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8b04a1f9548896a7908db841106912f083c5d09bbc4d03e7d4419d76f31da41f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                16,
+                329,
+                459,
+                750
+            ]
+        },
+        {
+            "type": "algorithm",
+            "content": {
+                "algorithm_caption": [],
+                "algorithm_content": [
+                    {
+                        "type": "text",
+                        "content": "function BEsT-FIRsT-SEARCH(problem,f) returns一个解节点或 failure 杯Knode ←NODE(STATE=prOblem.INITIAL)frontier←一个以f排序的优先队列，其中一个元素为nodereached←一个查找表，其中一个条目的键为problem.INITIAL，值为nodewhile not Is-EMPTY(frontier) donode ←PoP(frontier)if problem.Is-GoAL(node.STATE) then return nodefor each child in ExPAND(problem, node) dos ← child.STATEif s不在reached中 or child.PATH-CosT<reached[s].PATH-CosT thenreached[s]←child将child添加到frontier中(添加或替换)return failure"
+                    }
+                ],
+                "algorithm_footnote": []
+            },
+            "bbox": [
+                484,
+                151,
+                983,
+                679
+            ]
+        },
+        {
+            "type": "algorithm",
+            "content": {
+                "algorithm_caption": [],
+                "algorithm_content": [
+                    {
+                        "type": "text",
+                        "content": "function ExPAND(problem,node) yields节点 s ← node.STATE for each action in problem.AcTioNs(s) do s'←problem.REsULT(s,action) cost ← node.PATH-CosT +problem.ACTION-CosT(s,action,s) yield NODE(STATE=s',PARENT=nOde,ACTION=aCtion,PATH-COSTFCOst)"
+                    }
+                ],
+                "algorithm_footnote": []
+            },
+            "bbox": [
+                478,
+                718,
+                959,
+                977
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "VERSITY. 1946 CHINA R 林 大 zilur"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                15,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "一致代价搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                77,
+                212,
+                259,
+                272
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "扩展S，生成R[80]、F[99]"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                303,
+                389,
+                357
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "扩展R，生成P[80+97=177]"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                383,
+                400,
+                437
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·扩展F，生成B[99+211=310]"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                462,
+                411,
+                516
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·扩展P，生成B[177+101=278]"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                544,
+                423,
+                596
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "更新路径，保留B[278]"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                624,
+                358,
+                677
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "扩展B，目标结点，算法结束"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                701,
+                429,
+                755
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "结点S到B的路径代价值为278"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                783,
+                431,
+                835
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a76bb27cc0585552969ef732f0392bfc7abb7316a5ee4df935319819a2641cb2.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                613,
+                211,
+                980,
+                659
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "VERSITY. 1946 CHINA 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "20"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                925,
+                966
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "一致代价搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                214,
+                258,
+                272
+            ]
+        },
+        {
+            "type": "algorithm",
+            "content": {
+                "algorithm_caption": [],
+                "algorithm_content": [
+                    {
+                        "type": "text",
+                        "content": "function UNIFORM-COsT-SEARCH(problem)returns a solution,orfailure nodeanode with STATE=problem.INITIAL-STATE,PATH-COST=0 frontier-aprioity queue ordered byPATH-CosT,with nodeas theonly element erplored←anempty set loopdo ifEMPrY?(frontier) thenreturn failure node-PoP(frontier) 1*chooses the lowest-cost node in frontier */ if problem.GOAL-TEST(node.STATE) then return SOLUTION(node) addnode.STATEto explored foreach action in problem.ACTIONs(node.STATE) do child-CHiLD-NoDE(problem,node,action) if child.STATE is not inexplored orfrontier then frontier-INSERT(child,frontier) else if child.STATE is in frontier with higher PATH-Cosr then replace that frontier node with child"
+                    }
+                ],
+                "algorithm_footnote": []
+            },
+            "bbox": [
+                87,
+                292,
+                672,
+                837
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/675df1c8be2644e19ee10109158fec7a272ff7f0eb27a4904a18105e3485a077.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                703,
+                400,
+                972,
+                688
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "图3.14图的一致代价搜索。算法与图3.7给出的一般图搜索算法有不同，它使用了优先级队列并在边缘中的状态发现更小代价的路径时引入了额外的检查。边缘的数据结构需要支持有效的成员检测，这样它就结合了优先级队列和哈希表的能力"
+                    }
+                ]
+            },
+            "bbox": [
+                25,
+                851,
+                753,
+                970
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINA 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                4,
+                964,
+                142,
+                992
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "21"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                942,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索-一致代价搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                564,
+                129
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9486a0887954803ab37adc4b97eb4201c76ddfbaeab829a5ad3c54e10ccefae8.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                2,
+                544,
+                270,
+                827
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "22"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                293,
+                127
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "一致代价搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                79,
+                214,
+                258,
+                272
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/904e183f3899ca1b2823536c01870f99726607d9b527e4a8d7ec36fcf7c26bcc.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                37,
+                309,
+                304,
+                596
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bc423b55f80c85401375d5ed1d2885f442fa7806d98a4c5dcf32aee718304d56.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                393,
+                248,
+                884,
+                738
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "e的代价为9的节点会被更新成代价为5，从而代价为9的e节点不会被扩展"
+                    }
+                ]
+            },
+            "bbox": [
+                402,
+                829,
+                833,
+                951
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "23"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "一致代价搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                214,
+                258,
+                272
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "完备性"
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                303,
+                187,
+                353
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·若存在代价值为0的动作NOOP，则可能陷入死循环，算法不完备"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                383,
+                847,
+                435
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "若b有限且动作的代价值均不为0，则算法完备"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                462,
+                642,
+                516
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·最优性：最优，C*表示最优解路径的代价值"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                542,
+                591,
+                596
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "时间复杂度"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                624,
+                237,
+                674
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "一致代价搜索>宽度优先搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                703,
+                458,
+                753
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·当动作代价值相同时，除了目标测试的时间点不同之外，一致代价搜索退化为宽度优先搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                783,
+                925,
+                916
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                142,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "24"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                293,
+                127
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "深度优先搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                33,
+                212,
+                211,
+                270
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "扩展最深层的没有被扩展的节点"
+                    }
+                ]
+            },
+            "bbox": [
+                32,
+                303,
+                223,
+                514
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/978e57db763fe8b5721564545c4101d7eb5e97b64d3be0c807cc95410df3a454.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                290,
+                179,
+                867,
+                985
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "25"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                15,
+                50,
+                295,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "深度优先搜索 (图搜索)"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                31,
+                212,
+                340,
+                272
+            ]
+        },
+        {
+            "type": "algorithm",
+            "content": {
+                "algorithm_caption": [],
+                "algorithm_content": [
+                    {
+                        "type": "text",
+                        "content": "function DEPTH-FIRST-SEARCH(problem) returns a solution,or failure node-anode with STATE=problem.INITIAL-STATE,PATH-COST=0 if pyobiem.GOAL-TEST(node.STATE) then return SOLUTION(node) frontier--a LiFO queue with node as the only element erplored-an empty set loopdo ifEMPTY?(frontier) thenreturn failure node--PoP(frontier)/*chooses the shallowest node infrontier*/ add node.STATE to erplored foreach action in problem.AcTioNs(node.STATE) do child--CHILD-NoDE(problem,node,action) if child.STATEisnot in explored orfrontier then ifproblem.GOAL-TEST(child.STATE) then return SOLUTION(child) frontier--INsERT(child,frontier)"
+                    }
+                ],
+                "algorithm_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                126,
+                275,
+                870,
+                903
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "图3.11图的深度优先搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                370,
+                916,
+                625,
+                964
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINA 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                994,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "26"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                925,
+                966
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                82,
+                50,
+                293,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "深度优先搜索 (树搜索)"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                79,
+                214,
+                385,
+                272
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/715551537707e501c0211eff1d920b93326b83422f8083d65adfeda2f7f12026.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                61,
+                396,
+                317,
+                664
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/04e8604f3d2de978b8d254e90adbf994779ab44dacd97b8567216b5c53ee3ead.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                446,
+                264,
+                895,
+                755
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "27"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                942,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                15,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5257274f42e7d79531d9584548420c06fc9f16ad6df147b7b6f45d5853d824f4.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                176,
+                148,
+                820,
+                1000
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "VERSITY.1946 CHINAR 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                994,
+                181
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "30"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                15,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/704de06256b17f4cbfe9809855021c9d8a22fae80a08c77743afa9e02d537796.jpg"
+                },
+                "content": "",
+                "chart_caption": [],
+                "chart_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                178,
+                144,
+                823,
+                998
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "VERSITY.1946 CHINAR 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                994,
+                181
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "31"
+                    }
+                ]
+            },
+            "bbox": [
+                906,
+                940,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "深度优先搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                79,
+                214,
+                258,
+                270
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "完备性"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                303,
+                197,
+                353
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "有限状态空间上的图搜索，算法完备"
+                    }
+                ]
+            },
+            "bbox": [
+                113,
+                383,
+                557,
+                435
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "无限状态空间上的图搜索，算法不完备，可能存在无限且无法到达目标结点的路径 (例：Donald Knuth猜想，一直执行阶乘动作)"
+                    }
+                ]
+            },
+            "bbox": [
+                113,
+                462,
+                922,
+                596
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "? 树搜索，算法不完备，可能陷入死循环"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                624,
+                583,
+                675
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "最优性：非最优"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                703,
+                296,
+                753
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                141,
+                992
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "32"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "深度优先搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                52,
+                251,
+                230,
+                309
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "时间复杂度"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                52,
+                333,
+                209,
+                383
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "，树搜索，最多生成0(bm)个结点，可能大于状态空间的规模，m可能是无限的 (m-节点的最大深度)"
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                401,
+                909,
+                524
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "空间复杂度 (优势)"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                52,
+                548,
+                293,
+                600
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "旻当一个结点的所有子结点均被探索，则该结点可以删除"
+                    }
+                ]
+            },
+            "bbox": [
+                86,
+                620,
+                731,
+                672
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "仅需存储一条从根结点到叶结点的路径，以及该路径上每个结点的所有未被扩展的兄弟结点，0(bm)"
+                    }
+                ]
+            },
+            "bbox": [
+                86,
+                688,
+                907,
+                812
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                141,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "33"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "回溯搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                81,
+                214,
+                200,
+                272
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·每次扩展只生成一个子节点，而不是所有子节点"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                303,
+                637,
+                355
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "空间复杂度"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                383,
+                237,
+                435
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f55affdc37c206c1c072fd8768bd530903dafccdcd6969d265bc0420bd7d7ef2.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                659,
+                166,
+                912,
+                427
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "，每个被部分扩展的父节点要记住下一个要生成的子节点，保存0(m)个节点"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                462,
+                921,
+                594
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·通过直接修改父节点生成子节点，保存1个初始状态描述和0(m)个动作"
+                    }
+                ]
+            },
+            "bbox": [
+                109,
+                622,
+                914,
+                675
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·为了回溯生成下一个子节点，必须能够撤销每次修改"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                703,
+                719,
+                755
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                141,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "36"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                127
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "深度受限搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                79,
+                214,
+                258,
+                270
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·添加了深度界限t：深度为e的节点当做叶节点对待"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                322,
+                663,
+                375
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "完备性：当t<d时，算法不完备"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                429,
+                466,
+                481
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "时间复杂度： "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0 ( b ^ { \\ell } )"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                538,
+                321,
+                592
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "空间复杂度： "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0 ( b ^ { \\ell } )"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                650,
+                321,
+                701
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·当ε=o时，深度受限搜索退化为深度优先搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                757,
+                629,
+                809
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                141,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "37"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                942,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "迭代加深搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                212,
+                259,
+                272
+            ]
+        },
+        {
+            "type": "algorithm",
+            "content": {
+                "algorithm_caption": [],
+                "algorithm_content": [
+                    {
+                        "type": "text",
+                        "content": "function ITERATIVE-DEEPENING-SEARCH(problem) returns一个解节点或failure"
+                    }
+                ],
+                "algorithm_footnote": []
+            },
+            "bbox": [
+                284,
+                170,
+                809,
+                209
+            ]
+        },
+        {
+            "type": "algorithm",
+            "content": {
+                "algorithm_caption": [],
+                "algorithm_content": [
+                    {
+                        "type": "text",
+                        "content": "for depth = O to ∞ do result ←DEPTH-LIMITED-SEARCH(problem,depth) if result ≠ cutoff then return result"
+                    }
+                ],
+                "algorithm_footnote": []
+            },
+            "bbox": [
+                301,
+                218,
+                646,
+                357
+            ]
+        },
+        {
+            "type": "algorithm",
+            "content": {
+                "algorithm_caption": [],
+                "algorithm_content": [
+                    {
+                        "type": "text",
+                        "content": "function DEPTH-LIMITED-SEARCH(problem,l) returns一个解节点或failure或cutofffrontier ←一个LIFO队列（栈），其中一个元素为NoDE(problem.INITIAL)result ←failureWhile not Is-EMPTY(frontier) donode ←PoP(frontier)if problem.Is-GoAL(node.STATE) then return nodeif DEPTH(node)>l thenresult ← cutoffelse if not Is-CYcLE(node) dofor each child in ExPAND(problem, node) do将child添加到frontierreturn result"
+                    }
+                ],
+                "algorithm_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                286,
+                407,
+                841,
+                983
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINA 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "38"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/46430c2f978938aa1752aee4e9b5b488fa01aeaeec92678d66555b360e931801.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                143,
+                207,
+                841,
+                866
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINA 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                181
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "39"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                940,
+                923,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                127
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "limit: 3"
+                    }
+                ]
+            },
+            "bbox": [
+                159,
+                229,
+                198,
+                259
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b3cd5a2f3c6cd6aec626870393282f03514f7ec893181a4d5f704935f551de5f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                176,
+                220,
+                840,
+                853
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "40"
+                    }
+                ]
+            },
+            "bbox": [
+                908,
+                942,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "迭代加深搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                214,
+                258,
+                272
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "完备性：若b有限，则算法完备"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                303,
+                448,
+                355
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "最优性："
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                383,
+                196,
+                435
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "若路径代价是节点深度的非递减函数，则算法最优"
+                    }
+                ]
+            },
+            "bbox": [
+                122,
+                462,
+                708,
+                516
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "当动作代价值相同时，算法最优"
+                    }
+                ]
+            },
+            "bbox": [
+                122,
+                542,
+                508,
+                594
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·时间复杂度： "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( d ) b ^ { 1 } + ( d - 1 ) b ^ { 2 } + ( d - 2 ) b ^ { 3 } + . . . + b ^ { d } = O ( b ^ { d } )"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                622,
+                756,
+                675
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "空间复杂度： "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O ( b d )"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                705,
+                328,
+                755
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                141,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAA林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "42"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                942,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "双向搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                214,
+                200,
+                272
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·两个搜索同时运行：一个从初始状态向前搜索，另一个从目标状态向后搜索，直到状态相遇"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                303,
+                920,
+                435
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "目标测试：检查两个搜索的边界集是否相交"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                462,
+                587,
+                514
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "优点：搜索区域比深度优先搜索小"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                542,
+                487,
+                594
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·限制：只能用在支持反向搜索的场合"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                622,
+                511,
+                675
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "最优性：非最优"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                703,
+                287,
+                753
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·双向宽度优先搜索的时间复杂度： "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O ( b ^ { d / 2 } )"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                785,
+                570,
+                837
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "·双向宽度优先搜索的空间复杂度： "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O ( b ^ { d / 2 } )"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                868,
+                570,
+                920
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                141,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "43"
+                    }
+                ]
+            },
+            "bbox": [
+                908,
+                942,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/cad7d217f775edd54bb99708c0ada6a8a25c87c62ba979e181f884122359e901.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                162,
+                222,
+                473,
+                777
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a89335a78c0a6243dc9773afad45b315b46f5c068f926dc4b10e5395f6bbac65.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "图3.20即将成功的双向搜索的示意图，从起始结点发出的一个分支与从目标结点发出的一个分支即将相遇"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                491,
+                203,
+                812,
+                775
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                142,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINA 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "44"
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                942,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "双向最佳"
+                    }
+                ]
+            },
+            "bbox": [
+                79,
+                214,
+                200,
+                272
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "优先搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                80,
+                307,
+                200,
+                366
+            ]
+        },
+        {
+            "type": "algorithm",
+            "content": {
+                "algorithm_caption": [],
+                "algorithm_content": [
+                    {
+                        "type": "text",
+                        "content": "function BIBF-SEARcH(problempfr problemg,fB) returns一个解节点或failurenoder←NODE(problemINITIAL）//初始状态节点node←NoDE(problemp.INITIAL）//目标状态节点frontier←按f排序的优先队列，其中一个元素为noderfrontier←按f排序的优先队列，其中一个元素为nodeBreachedp←一个查找表，其中一个条目的键是node.STArE且值是noderreached←一个查找表，其中一个条目的键是nodey.STATE且值是nodeBsolution←failurewhile not TERMINATED(solution,frontierr, frontierB) doiff(ToP(frontier))<fs(ToP(frontierb)) thensolution ←ProcEED(F,problem.,frontierF,reachedp,reachedg, solution)elsesolution ←PRocEED(B,problemg,frontier,reached,reached,solution)return solutionfunction PRocEED(dir,problem,frontier,reached, reached,solution) returns一个角/在frontier上扩展节点，对照reached中的另一个边界//变量dir是方向：要么是F（代表正向），要么是B（代表反向）node ←PoP(frontier)for each child in ExPAND(problem, node) dos ← child.STATEif s不在 reached 中 or PATH-CosT(child)<PATH-CosT(reached[s]) thenreached[s]←child将child添加到frontierif s不在reached中thensolution←JoIN-NoDEs(dir,child,reached[s])if PATH-CosT(solution2)<PATH-CosT(solution) thensolution ←solutionreturn solution"
+                    }
+                ],
+                "algorithm_footnote": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                288,
+                150,
+                706,
+                994
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINAR 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "45"
+                    }
+                ]
+            },
+            "bbox": [
+                908,
+                942,
+                925,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4无信息搜索"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                16,
+                50,
+                294,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "无信息搜索策略对比"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                78,
+                214,
+                346,
+                272
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/306fdfe3e35e1b3e033e71175902fb1cca98e7c128f24546af3c0c5e078eb4f2.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>指标</td><td>广度优先</td><td>一致代价</td><td>深度优先</td><td>深度受限</td><td>迭代加深</td><td>双向（如适用）</td></tr><tr><td>完备性</td><td>是</td><td>是</td><td>否</td><td>否</td><td>是</td><td>是4</td></tr><tr><td>代价最优</td><td>是</td><td>是</td><td>否</td><td>否</td><td>是</td><td>是4</td></tr><tr><td>时间复杂性</td><td>0(6)</td><td>0(b1+10[(1）</td><td>0(b）</td><td>0(</td><td>0(69)</td><td>0(6</td></tr><tr><td>空间复杂性</td><td>0(69</td><td>0(b1+1c 1E1)</td><td>0(bm)</td><td>0（be）</td><td>0(bd)</td><td>0(b)</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                104,
+                355,
+                895,
+                661
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "注：1如果b是有限的且状态空间要么有解要么有限，则算法是完备的。2如果所有动作的代价都≥ε>0，算法是完备的。3如果动作代价都相同，算法是代价最优的。4如果两个方向均使用广度优先搜索或一致代价搜索"
+                    }
+                ]
+            },
+            "bbox": [
+                98,
+                683,
+                897,
+                777
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "授课教师：李静瑶"
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                955,
+                142,
+                992
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "1946 CHINA 林 大"
+                    }
+                ]
+            },
+            "bbox": [
+                896,
+                3,
+                993,
+                179
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "46"
+                    }
+                ]
+            },
+            "bbox": [
+                908,
+                942,
+                925,
+                964
+            ]
+        }
+    ]
+]
