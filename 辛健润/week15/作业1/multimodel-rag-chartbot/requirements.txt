@@ -1,0 +1,11 @@
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.5.0
+python-multipart>=0.0.6
+sqlalchemy>=2.0.0
+pymilvus>=2.4.0
+sentence-transformers>=2.2.0
+openai>=1.10.0
+pyyaml>=6.0
+httpx>=0.26.0
+pytest>=8.0.0

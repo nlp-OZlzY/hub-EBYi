@@ -1,0 +1,42 @@
+# App Config
+app:
+  name: "Multimodal RAG Chatbot"
+  version: "1.0.0"
+  host: "0.0.0.0"
+  port: 8000
+
+# Paths
+paths:
+  uploads_dir: "uploads"
+  processed_dir: "processed"
+  db_path: "db.db"
+
+# Milvus (Zilliz Cloud)
+milvus:
+  uri: "https://in03-5cb3b56f3af9ebc.serverless.ali-cn-hangzhou.cloud.zilliz.com.cn"
+  token: "9027d285f74e5ce113bf24162fc5cabe04b67db3ee25055f4748ea23785f00d0fa9b8217c108a04dc77c4a703b5860a7d39d7a7b"
+  collection: "rag_data_new"
+
+# Embedding Models
+embedding:
+  bge_model: "/root/autodl-tmp/models/BAAI/bge-small-zh-v1.5"
+  clip_model: "/root/autodl-tmp/models/jinaai/jina-clip-v2"
+  dimension: 512
+
+# LLM (Qwen)
+llm:
+  api_key: "sk-711c186f74494136ba26035be25a7cb1"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  model: "qwen-plus"
+
+# Mineru
+mineru:
+  cmd: "mineru"
+  output_dir: "./processed"
+  backend: "vlm-http-client"
+  url: "http://127.0.0.1:30000"
+
+# Worker
+worker:
+  interval_seconds: 30
+  chunk_size: 256
