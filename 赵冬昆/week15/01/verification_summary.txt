@@ -1,0 +1,27 @@
+=== Starting Verification ===
+
+[1/5] Testing Embedding Service...
+  EmbeddingService initialized successfully
+  [OK] Embedding generated: 1152 dimensions
+  [OK] First 3 values: [-0.10711669921875, 0.0631103515625, -0.0902099609375]
+
+[2/5] Testing Milvus Connection...
+  [OK] Connected to Milvus
+  [OK] Current collections: ['documents', 'test_docs']
+
+[3/5] Testing PDF Parsing...
+  Test PDF found: D:\111111111111Study\BADOU\第15周：ClaudeCode、文档解析和DeepResearch\01homework1\uploads\09b97e48-79ec-4d6e-95ce-9f3a92961ce7.pdf
+  [OK] PDF parsed successfully
+  [OK] 334 chunks extracted
+  [OK] First chunk preview: 欢迎
+感谢您选择了具有优良安全性、舒适性、动力性和经济性的Lynk&Co领克汽车。
+首次使用前请仔细、完整地阅读本手册内容，将有助于您更好地了解和使用车辆。
+本手册中的所有资料均为出版时的最新资料，但...
+
+[4/5] Testing Database...
+  [OK] Database connected
+  [OK] 2 documents in DB
+    - ID 1: 汽车知识手册.pdf (已完成)
+    - ID 2: 汽车知识手册.pdf (处理中)
+
+[5/5] Writing summary...
