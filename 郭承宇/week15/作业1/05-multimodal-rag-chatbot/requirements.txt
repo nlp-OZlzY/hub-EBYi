@@ -1,0 +1,28 @@
+# Web frameworks
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+streamlit>=1.34.0
+python-multipart>=0.0.9
+
+# Database & Vector DB
+sqlalchemy>=2.0.0
+pymilvus>=2.4.0
+
+# Message queue
+kafka-python>=2.0.2
+
+# HTTP client
+requests>=2.31.0
+
+# AI / ML
+sentence-transformers>=3.0.0
+openai>=1.30.0
+numpy>=1.26.0
+
+# Image processing
+Pillow>=10.0.0
+
+# Config & env
+python-dotenv>=1.0.0
+
+
