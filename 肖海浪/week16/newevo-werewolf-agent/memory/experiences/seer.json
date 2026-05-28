@@ -1,0 +1,122 @@
+[
+  {
+    "game_id": "b8660a96",
+    "player_id": 1,
+    "player_name": "玩家2",
+    "camp": "good",
+    "winner": "evil",
+    "is_winner": false,
+    "summary": "本局测试总结",
+    "strategies": "测试策略",
+    "mistakes": "测试错误",
+    "lessons": "测试建议"
+  },
+  {
+    "game_id": "e199a3c1",
+    "player_id": 0,
+    "player_name": "玩家1",
+    "camp": "good",
+    "winner": "good",
+    "is_winner": true,
+    "summary": "本局测试总结",
+    "strategies": "测试策略",
+    "mistakes": "测试错误",
+    "lessons": "测试建议"
+  },
+  {
+    "game_id": "8cf27d3f",
+    "player_id": 3,
+    "player_name": "玩家4",
+    "camp": "good",
+    "winner": "evil",
+    "is_winner": false,
+    "summary": "",
+    "strategies": "",
+    "mistakes": "",
+    "lessons": ""
+  },
+  {
+    "game_id": "8cf27d3f",
+    "player_id": 3,
+    "player_name": "玩家4",
+    "camp": "good",
+    "winner": "evil",
+    "is_winner": false,
+    "summary": "",
+    "strategies": "",
+    "mistakes": "",
+    "lessons": ""
+  },
+  {
+    "game_id": "8cf27d3f",
+    "player_id": 3,
+    "player_name": "玩家4",
+    "camp": "good",
+    "winner": "evil",
+    "is_winner": false,
+    "summary": "",
+    "strategies": "",
+    "mistakes": "",
+    "lessons": ""
+  },
+  {
+    "game_id": "3e9551bc",
+    "player_id": 5,
+    "player_name": "玩家6",
+    "camp": "good",
+    "winner": "good",
+    "is_winner": true,
+    "summary": "{\n    \"summary\": \"作为Seer，我成功查验了狼人玩家0和玩家4，但在白天发言中未能有效引导投票，导致决策混乱，最终被狼人杀害，但阵营获胜。\",\n    \"strategies\": \"我使用了夜晚查验策略来识别狼人，成功发现了玩家0和玩家4是狼人；但白天发言策略无效，因为投票记录显示混乱，没有集中火力对付已知狼人，信息传递不清。\",\n    \"mistakes\": \"错误在于发言内",
+    "strategies": "",
+    "mistakes": "",
+    "lessons": ""
+  },
+  {
+    "game_id": "3e9551bc",
+    "player_id": 5,
+    "player_name": "玩家6",
+    "camp": "good",
+    "winner": "good",
+    "is_winner": true,
+    "summary": "{\n    \"summary",
+    "strategies": "",
+    "mistakes": "",
+    "lessons": ""
+  },
+  {
+    "game_id": "3e9551bc",
+    "player_id": 5,
+    "player_name": "玩家6",
+    "camp": "good",
+    "winner": "good",
+    "is_winner": true,
+    "summary": "{\n    \"summary\": \"作为预言家，我成功查验了狼人玩家0和玩家4，为阵营提供了关键信息，助力胜利。但我的发言策略",
+    "strategies": "",
+    "mistakes": "",
+    "lessons": ""
+  },
+  {
+    "game_id": "665be60e",
+    "player_id": 2,
+    "player_name": "玩家2",
+    "camp": "good",
+    "winner": "good",
+    "is_winner": true,
+    "summary": "",
+    "strategies": "",
+    "mistakes": "",
+    "lessons": ""
+  },
+  {
+    "game_id": "12dacefa",
+    "player_id": 0,
+    "player_name": "玩家0",
+    "camp": "good",
+    "winner": "good",
+    "is_winner": true,
+    "summary": "我作为预言家，通过第一天果断起跳并成功带领好人投出狼人玩家5，随后第二晚查验出玩家2为狼人，再次带队将其投票出局，最终帮助好人阵营取得胜利，整体表现积极且有效。",
+    "strategies": "我使用了‘首夜即起跳预言家’的策略，虽然初期引发质疑，但通过后续查杀逻辑和投票记录分析，成功说服好人；同时利用‘狼人抱团投票’的现象（玩家2与玩家5同票投我）作为关键证据，有效指认了玩家2。",
+    "mistakes": "第一天发言时，我仅给出了查好人的信息，未在首轮阐明更多分析，导致部分玩家怀疑我的起跳动机；但这一策略最终未严重拖累局面，可以改进为在首轮加入更多‘为何起跳’的逻辑铺垫。",
+    "lessons": "未来应更注重在首轮发言中直接解释起跳理由，比如‘避免狼人抢先跳预言家造乱’；同时，记录并利用投票行为的一致性（如狼人抱团）作为核心攻击点，能大幅提高说服力。"
+  }
+]
