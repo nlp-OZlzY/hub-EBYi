@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find . -type f -name *.py -o -name *.ts -o -name *.js -o -name *.json)",
+      "Bash(python:*)",
+      "Bash(echo $DEEPSEEK_API_KEY)"
+    ]
+  }
+}
