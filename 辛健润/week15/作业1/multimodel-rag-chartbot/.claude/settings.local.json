@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ollama list:*)",
+      "Bash(pip list:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m pytest tests/test_api.py -v)",
+      "Bash(timeout 10 python -c \"\nimport sys\nsys.path.insert\\(0, '.'\\)\nfrom main import app\nprint\\('App imported successfully'\\)\nprint\\(f'Routes: {[r.path for r in app.routes]}'\\)\n\" 2>&1)",
+      "Bash(python:*)",
+      "Bash(curl -s http://localhost:8000/health)",
+      "Bash(curl -s http://localhost:8000/files)",
+      "Bash(curl -s http://localhost:8000/health echo -e \"\\\\n=== Docs ===\")",
+      "Bash(curl -s http://localhost:8000/docs)"
+    ]
+  }
+}
