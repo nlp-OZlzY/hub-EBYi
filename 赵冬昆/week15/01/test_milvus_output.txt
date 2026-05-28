@@ -1,0 +1,23 @@
+﻿=== Testing Milvus ===
+[EmbeddingService] Initialized with DashScope API, dim=1152
+
+Inserting test data...
+[MilvusService] Created collection: test_docs
+Inserted text 1
+Inserted text 2
+Inserted text 3
+Inserted text 4
+
+Searching for '发动机'...
+Found 3 results
+  Result 1: 
+  Result 2: 
+  Result 3: 
+
+Searching for '底盘'...
+Found 3 results
+  Result 1: 
+  Result 2: 
+  Result 3: 
+
+=== Milvus test complete ===

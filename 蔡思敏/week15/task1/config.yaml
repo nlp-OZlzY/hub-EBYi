@@ -1,0 +1,58 @@
+# 多模态RAG聊天机器人 - 配置文件
+
+# API服务配置
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+
+# 数据库配置
+database:
+  type: "sqlite"  # sqlite / mysql
+  path: "multimodal_rag.db"  # SQLite路径
+  # mysql配置（暂未使用）
+  # host: "localhost"
+  # port: 3306
+  # user: "root"
+  # password: ""
+  # database: "rag_db"
+
+# Milvus配置
+milvus:
+  uri: "https://in03-5cb3b56f3af9ebc.serverless.ali-cn-hangzhou.cloud.zilliz.com.cn"
+  token: "YOUR_MILVUS_TOKEN_HERE"
+  collection_name: "rag_data_new"
+
+# Kafka配置
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topic: "rag-data"
+  consumer_group: "rag-processor"
+
+# MinerU配置
+mineru:
+  url: "http://127.0.0.1:30000"
+  timeout: 600
+
+# 模型配置
+models:
+  bge_model: "/root/autodl-tmp/models/BAAI/bge-small-zh-v1.5"
+  clip_model: "/root/autodl-tmp/models/jinaai/jina-clip-v2"
+  qwen_model: "qwen-plus"
+
+# LLM配置
+llm:
+  api_key: "YOUR_DASHSCOPE_API_KEY"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  model: "qwen-plus"
+
+# 文件存储配置
+storage:
+  upload_dir: "uploads"
+  processed_dir: "processed"
+
+# RAG配置
+rag:
+  chunk_size: 256
+  top_k: 5
+  score_threshold: 0.5

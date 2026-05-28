@@ -1,0 +1,27 @@
+# Web框架
+fastapi>=0.109.0
+uvicorn>=0.27.0
+streamlit>=1.30.0
+
+# 数据库
+sqlalchemy>=2.0.25
+
+# 向量数据库
+pymilvus>=2.3.0
+
+# Kafka
+kafka-python>=2.0.2
+
+# 机器学习/Embedding
+sentence-transformers>=2.2.0
+numpy>=1.24.0
+
+# 文件处理
+python-multipart>=0.0.6
+python-docx>=1.1.0
+
+# HTTP客户端
+requests>=2.31.0
+
+# 通用
+pydantic>=2.5.0

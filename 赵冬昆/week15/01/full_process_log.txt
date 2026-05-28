@@ -1,0 +1,4 @@
+=== Starting Full Document Processing ===
+
+[1/5] Connecting to database...
+✓ Database connected
