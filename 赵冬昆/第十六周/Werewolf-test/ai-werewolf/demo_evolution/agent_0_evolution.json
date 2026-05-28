@@ -1,0 +1,135 @@
+{
+  "agent_id": "agent_0",
+  "current_version": "1.0.3",
+  "current_strategy_config": {},
+  "critiques": [
+    {
+      "agent_id": "agent_0",
+      "version": "1.0.0",
+      "game_id": "38e079cb",
+      "timestamp": "2026-05-28T17:48:31.518573",
+      "overall_score": 25.2,
+      "strengths": [],
+      "weaknesses": [
+        "未能带领阵营获胜",
+        "投票准确率较低 (0%)",
+        "过早死亡"
+      ],
+      "mistakes": [],
+      "improvement_suggestions": [
+        "需要提高判断力，更准确地识别狼人",
+        "需要更好地保护自己，避免成为目标"
+      ],
+      "strategy_adjustments": {
+        "risk_tolerance_delta": -0.1,
+        "speech_style_changes": [],
+        "voting_strategy_changes": [
+          "更加谨慎地分析发言",
+          "多关注细节和逻辑漏洞"
+        ],
+        "role_specific_changes": []
+      }
+    },
+    {
+      "agent_id": "agent_0",
+      "version": "1.0.1",
+      "game_id": "8769650b",
+      "timestamp": "2026-05-28T17:48:31.533338",
+      "overall_score": 120.0,
+      "strengths": [],
+      "weaknesses": [
+        "未能带领阵营获胜",
+        "投票准确率较低 (0%)",
+        "过早死亡"
+      ],
+      "mistakes": [],
+      "improvement_suggestions": [
+        "需要提高判断力，更准确地识别狼人",
+        "需要更好地保护自己，避免成为目标"
+      ],
+      "strategy_adjustments": {
+        "risk_tolerance_delta": -0.1,
+        "speech_style_changes": [],
+        "voting_strategy_changes": [
+          "更加谨慎地分析发言",
+          "多关注细节和逻辑漏洞"
+        ],
+        "role_specific_changes": []
+      }
+    },
+    {
+      "agent_id": "agent_0",
+      "version": "1.0.2",
+      "game_id": "ca3fc034",
+      "timestamp": "2026-05-28T17:48:31.546291",
+      "overall_score": 136.13,
+      "strengths": [],
+      "weaknesses": [
+        "未能带领阵营获胜",
+        "投票准确率较低 (0%)",
+        "过早死亡"
+      ],
+      "mistakes": [],
+      "improvement_suggestions": [
+        "需要提高判断力，更准确地识别狼人",
+        "需要更好地保护自己，避免成为目标"
+      ],
+      "strategy_adjustments": {
+        "risk_tolerance_delta": -0.1,
+        "speech_style_changes": [],
+        "voting_strategy_changes": [
+          "更加谨慎地分析发言",
+          "多关注细节和逻辑漏洞"
+        ],
+        "role_specific_changes": []
+      }
+    }
+  ],
+  "evolution_history": [
+    {
+      "agent_id": "agent_0",
+      "from_version": "1.0.0",
+      "to_version": "1.0.1",
+      "timestamp": "2026-05-28T17:48:31.520978",
+      "evolution_type": "config_update",
+      "changes": {
+        "parameter_adjustments": {
+          "defensiveness": "increase"
+        }
+      },
+      "trigger_reason": "Score: 25.2, Weaknesses: 3",
+      "performance_delta": 0.0,
+      "is_successful": false
+    },
+    {
+      "agent_id": "agent_0",
+      "from_version": "1.0.1",
+      "to_version": "1.0.2",
+      "timestamp": "2026-05-28T17:48:31.535596",
+      "evolution_type": "config_update",
+      "changes": {
+        "parameter_adjustments": {
+          "defensiveness": "increase"
+        }
+      },
+      "trigger_reason": "Score: 120.0, Weaknesses: 3",
+      "performance_delta": 0.0,
+      "is_successful": false
+    },
+    {
+      "agent_id": "agent_0",
+      "from_version": "1.0.2",
+      "to_version": "1.0.3",
+      "timestamp": "2026-05-28T17:48:31.548606",
+      "evolution_type": "config_update",
+      "changes": {
+        "parameter_adjustments": {
+          "defensiveness": "increase"
+        }
+      },
+      "trigger_reason": "Score: 136.13, Weaknesses: 3",
+      "performance_delta": 0.0,
+      "is_successful": false
+    }
+  ]
+}

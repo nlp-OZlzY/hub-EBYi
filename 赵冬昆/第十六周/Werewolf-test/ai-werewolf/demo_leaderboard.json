@@ -1,0 +1,619 @@
+{
+  "entries": {
+    "agent_0": {
+      "rank": 2,
+      "agent_id": "agent_0",
+      "version": "1.0.0",
+      "model_name": "gpt-4",
+      "games_played": 10,
+      "wins": 5,
+      "losses": 5,
+      "mvps": 5,
+      "win_rate": 50.0,
+      "mvp_rate": 50.0,
+      "avg_score": 82.18,
+      "avg_survival_rounds": 1.0,
+      "role_performance": {
+        "seer": {
+          "games": 3,
+          "wins": 1,
+          "avg_score": 63.333333333333336
+        },
+        "villager": {
+          "games": 2,
+          "wins": 1,
+          "avg_score": 73.16499999999999
+        },
+        "witch": {
+          "games": 2,
+          "wins": 0,
+          "avg_score": 31.134999999999998
+        },
+        "werewolf": {
+          "games": 3,
+          "wins": 3,
+          "avg_score": 141.06666666666666
+        }
+      },
+      "trend": "up",
+      "recent_form": [
+        140.2,
+        120.0,
+        142.8,
+        140.2,
+        27.8
+      ]
+    },
+    "agent_1": {
+      "rank": 1,
+      "agent_id": "agent_1",
+      "version": "1.0.0",
+      "model_name": "claude-3",
+      "games_played": 10,
+      "wins": 8,
+      "losses": 2,
+      "mvps": 5,
+      "win_rate": 80.0,
+      "mvp_rate": 50.0,
+      "avg_score": 102.08,
+      "avg_survival_rounds": 1.0,
+      "role_performance": {
+        "werewolf": {
+          "games": 6,
+          "wins": 6,
+          "avg_score": 135.32166666666663
+        },
+        "witch": {
+          "games": 1,
+          "wins": 1,
+          "avg_score": 91.13
+        },
+        "seer": {
+          "games": 1,
+          "wins": 0,
+          "avg_score": 25.2
+        },
+        "villager": {
+          "games": 2,
+          "wins": 1,
+          "avg_score": 46.3
+        }
+      },
+      "trend": "down",
+      "recent_form": [
+        25.2,
+        90.0,
+        112.8,
+        2.6,
+        142.8
+      ]
+    },
+    "agent_2": {
+      "rank": 3,
+      "agent_id": "agent_2",
+      "version": "1.0.0",
+      "model_name": "gpt-4",
+      "games_played": 10,
+      "wins": 3,
+      "losses": 7,
+      "mvps": 0,
+      "win_rate": 30.0,
+      "mvp_rate": 0.0,
+      "avg_score": 47.0,
+      "avg_survival_rounds": 1.0,
+      "role_performance": {
+        "villager": {
+          "games": 3,
+          "wins": 0,
+          "avg_score": 19.266666666666666
+        },
+        "witch": {
+          "games": 1,
+          "wins": 0,
+          "avg_score": 2.6
+        },
+        "werewolf": {
+          "games": 5,
+          "wins": 3,
+          "avg_score": 75.014
+        },
+        "seer": {
+          "games": 1,
+          "wins": 0,
+          "avg_score": 34.47
+        }
+      },
+      "trend": "up",
+      "recent_form": [
+        110.2,
+        35.0,
+        27.8,
+        110.2,
+        90.2
+      ]
+    },
+    "agent_3": {
+      "rank": 4,
+      "agent_id": "agent_3",
+      "version": "1.0.0",
+      "model_name": "claude-3",
+      "games_played": 10,
+      "wins": 4,
+      "losses": 6,
+      "mvps": 0,
+      "win_rate": 40.0,
+      "mvp_rate": 0.0,
+      "avg_score": 40.83,
+      "avg_survival_rounds": 1.0,
+      "role_performance": {
+        "werewolf": {
+          "games": 2,
+          "wins": 2,
+          "avg_score": 98.16499999999999
+        },
+        "witch": {
+          "games": 2,
+          "wins": 0,
+          "avg_score": 19.835
+        },
+        "villager": {
+          "games": 5,
+          "wins": 2,
+          "avg_score": 32.908
+        },
+        "seer": {
+          "games": 1,
+          "wins": 0,
+          "avg_score": 7.8
+        }
+      },
+      "trend": "stable",
+      "recent_form": [
+        25.2,
+        64.47,
+        7.8,
+        25.2,
+        7.8
+      ]
+    },
+    "agent_4": {
+      "rank": 6,
+      "agent_id": "agent_4",
+      "version": "1.0.0",
+      "model_name": "gpt-4",
+      "games_played": 10,
+      "wins": 1,
+      "losses": 9,
+      "mvps": 0,
+      "win_rate": 10.0,
+      "mvp_rate": 0.0,
+      "avg_score": 18.7,
+      "avg_survival_rounds": 1.0,
+      "role_performance": {
+        "witch": {
+          "games": 2,
+          "wins": 0,
+          "avg_score": 5.2
+        },
+        "villager": {
+          "games": 4,
+          "wins": 0,
+          "avg_score": 7.7
+        },
+        "werewolf": {
+          "games": 3,
+          "wins": 1,
+          "avg_score": 46.86666666666667
+        },
+        "seer": {
+          "games": 1,
+          "wins": 0,
+          "avg_score": 5.2
+        }
+      },
+      "trend": "down",
+      "recent_form": [
+        5.2,
+        30.2,
+        5.2,
+        5.2,
+        5.2
+      ]
+    },
+    "agent_5": {
+      "rank": 5,
+      "agent_id": "agent_5",
+      "version": "1.0.0",
+      "model_name": "claude-3",
+      "games_played": 10,
+      "wins": 3,
+      "losses": 7,
+      "mvps": 0,
+      "win_rate": 30.0,
+      "mvp_rate": 0.0,
+      "avg_score": 19.1,
+      "avg_survival_rounds": 1.0,
+      "role_performance": {
+        "villager": {
+          "games": 4,
+          "wins": 0,
+          "avg_score": 2.6
+        },
+        "seer": {
+          "games": 3,
+          "wins": 1,
+          "avg_score": 19.26666666666667
+        },
+        "werewolf": {
+          "games": 1,
+          "wins": 1,
+          "avg_score": 67.6
+        },
+        "witch": {
+          "games": 2,
+          "wins": 1,
+          "avg_score": 27.6
+        }
+      },
+      "trend": "down",
+      "recent_form": [
+        2.6,
+        52.6,
+        2.6,
+        2.6,
+        2.6
+      ]
+    }
+  },
+  "agent_versions": {
+    "agent_0": [
+      {
+        "agent_id": "agent_0",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:40:30.426362"
+      },
+      {
+        "agent_id": "agent_0",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:01.021547"
+      },
+      {
+        "agent_id": "agent_0",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:43.026464"
+      },
+      {
+        "agent_id": "agent_0",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:06.468158"
+      },
+      {
+        "agent_id": "agent_0",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:34.103172"
+      },
+      {
+        "agent_id": "agent_0",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:03.476877"
+      },
+      {
+        "agent_id": "agent_0",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:31.413673"
+      }
+    ],
+    "agent_1": [
+      {
+        "agent_id": "agent_1",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:40:30.428239"
+      },
+      {
+        "agent_id": "agent_1",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:01.023920"
+      },
+      {
+        "agent_id": "agent_1",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:43.028435"
+      },
+      {
+        "agent_id": "agent_1",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:06.471202"
+      },
+      {
+        "agent_id": "agent_1",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:34.105255"
+      },
+      {
+        "agent_id": "agent_1",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:03.479185"
+      },
+      {
+        "agent_id": "agent_1",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:31.416098"
+      }
+    ],
+    "agent_2": [
+      {
+        "agent_id": "agent_2",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:40:30.430261"
+      },
+      {
+        "agent_id": "agent_2",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:01.025998"
+      },
+      {
+        "agent_id": "agent_2",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:43.030514"
+      },
+      {
+        "agent_id": "agent_2",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:06.473576"
+      },
+      {
+        "agent_id": "agent_2",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:34.107552"
+      },
+      {
+        "agent_id": "agent_2",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:03.481494"
+      },
+      {
+        "agent_id": "agent_2",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:31.418450"
+      }
+    ],
+    "agent_3": [
+      {
+        "agent_id": "agent_3",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:40:30.432195"
+      },
+      {
+        "agent_id": "agent_3",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:01.027765"
+      },
+      {
+        "agent_id": "agent_3",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:43.032478"
+      },
+      {
+        "agent_id": "agent_3",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:06.475654"
+      },
+      {
+        "agent_id": "agent_3",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:34.109808"
+      },
+      {
+        "agent_id": "agent_3",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:03.483760"
+      },
+      {
+        "agent_id": "agent_3",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:31.421002"
+      }
+    ],
+    "agent_4": [
+      {
+        "agent_id": "agent_4",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:40:30.434146"
+      },
+      {
+        "agent_id": "agent_4",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:01.029898"
+      },
+      {
+        "agent_id": "agent_4",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:43.034541"
+      },
+      {
+        "agent_id": "agent_4",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:06.477967"
+      },
+      {
+        "agent_id": "agent_4",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:34.111845"
+      },
+      {
+        "agent_id": "agent_4",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:03.486040"
+      },
+      {
+        "agent_id": "agent_4",
+        "version": "1.0.0",
+        "model_name": "gpt-4",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:31.423352"
+      }
+    ],
+    "agent_5": [
+      {
+        "agent_id": "agent_5",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:40:30.436112"
+      },
+      {
+        "agent_id": "agent_5",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:01.032199"
+      },
+      {
+        "agent_id": "agent_5",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:42:43.036975"
+      },
+      {
+        "agent_id": "agent_5",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:06.480198"
+      },
+      {
+        "agent_id": "agent_5",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:46:34.114629"
+      },
+      {
+        "agent_id": "agent_5",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:03.489611"
+      },
+      {
+        "agent_id": "agent_5",
+        "version": "1.0.0",
+        "model_name": "claude-3",
+        "prompt_version": "1.0",
+        "strategy_version": "1.0",
+        "created_at": "2026-05-28T17:48:31.425774"
+      }
+    ]
+  },
+  "last_updated": "2026-05-28T17:48:31.499959"
+}
