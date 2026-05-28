@@ -1,0 +1,443 @@
+{
+  "total_games": 3,
+  "evaluations": [
+    {
+      "game_id": "1356080a",
+      "timestamp": "2026-05-28T17:48:31.437763",
+      "config_name": "",
+      "total_rounds": 1,
+      "winner": "evil",
+      "game_duration_seconds": 0.007992982864379883,
+      "global_metrics": {
+        "total_dialogues": 22,
+        "vote_tie_count": 0
+      },
+      "player_metrics": {
+        "0": {
+          "player_id": 0,
+          "role": "werewolf",
+          "team": "evil",
+          "outcome": {
+            "is_winner": true,
+            "is_alive": true,
+            "is_mvp": true,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 1.0,
+            "speech_quality": 0.78,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 1.0
+            }
+          },
+          "overall_score": 142.8
+        },
+        "1": {
+          "player_id": 1,
+          "role": "werewolf",
+          "team": "evil",
+          "outcome": {
+            "is_winner": true,
+            "is_alive": true,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 1.0,
+            "speech_quality": 0.78,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 1.0
+            }
+          },
+          "overall_score": 112.8
+        },
+        "2": {
+          "player_id": 2,
+          "role": "villager",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": true,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.78,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 27.8
+        },
+        "3": {
+          "player_id": 3,
+          "role": "seer",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": false,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.78,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 7.8
+        },
+        "4": {
+          "player_id": 4,
+          "role": "villager",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": false,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.52,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 5.2
+        },
+        "5": {
+          "player_id": 5,
+          "role": "witch",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": false,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.26,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 2.6
+        }
+      }
+    },
+    {
+      "game_id": "e199f690",
+      "timestamp": "2026-05-28T17:48:31.460556",
+      "config_name": "",
+      "total_rounds": 1,
+      "winner": "evil",
+      "game_duration_seconds": 0.006122589111328125,
+      "global_metrics": {
+        "total_dialogues": 15,
+        "vote_tie_count": 0
+      },
+      "player_metrics": {
+        "0": {
+          "player_id": 0,
+          "role": "werewolf",
+          "team": "evil",
+          "outcome": {
+            "is_winner": true,
+            "is_alive": true,
+            "is_mvp": true,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 1.0,
+            "speech_quality": 0.52,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 1.0
+            }
+          },
+          "overall_score": 140.2
+        },
+        "1": {
+          "player_id": 1,
+          "role": "villager",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": false,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.26,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 2.6
+        },
+        "2": {
+          "player_id": 2,
+          "role": "werewolf",
+          "team": "evil",
+          "outcome": {
+            "is_winner": true,
+            "is_alive": true,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 1.0,
+            "speech_quality": 0.52,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 1.0
+            }
+          },
+          "overall_score": 110.2
+        },
+        "3": {
+          "player_id": 3,
+          "role": "villager",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": true,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.52,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 25.2
+        },
+        "4": {
+          "player_id": 4,
+          "role": "witch",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": false,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.52,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 5.2
+        },
+        "5": {
+          "player_id": 5,
+          "role": "seer",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": false,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.26,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 2.6
+        }
+      }
+    },
+    {
+      "game_id": "c1df741e",
+      "timestamp": "2026-05-28T17:48:31.485613",
+      "config_name": "",
+      "total_rounds": 1,
+      "winner": "evil",
+      "game_duration_seconds": 0.008567333221435547,
+      "global_metrics": {
+        "total_dialogues": 21,
+        "vote_tie_count": 0
+      },
+      "player_metrics": {
+        "0": {
+          "player_id": 0,
+          "role": "witch",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": true,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.78,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 27.8
+        },
+        "1": {
+          "player_id": 1,
+          "role": "werewolf",
+          "team": "evil",
+          "outcome": {
+            "is_winner": true,
+            "is_alive": true,
+            "is_mvp": true,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 1.0,
+            "speech_quality": 0.78,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 1.0
+            }
+          },
+          "overall_score": 142.8
+        },
+        "2": {
+          "player_id": 2,
+          "role": "werewolf",
+          "team": "evil",
+          "outcome": {
+            "is_winner": true,
+            "is_alive": false,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 1.0,
+            "speech_quality": 0.52,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 1.0
+            }
+          },
+          "overall_score": 90.2
+        },
+        "3": {
+          "player_id": 3,
+          "role": "villager",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": false,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.78,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 7.8
+        },
+        "4": {
+          "player_id": 4,
+          "role": "seer",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": false,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.52,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 5.2
+        },
+        "5": {
+          "player_id": 5,
+          "role": "villager",
+          "team": "good",
+          "outcome": {
+            "is_winner": false,
+            "is_alive": false,
+            "is_mvp": false,
+            "survival_rounds": 1
+          },
+          "process": {
+            "vote_accuracy": 0.0,
+            "speech_quality": 0.26,
+            "role_performance": {
+              "inspection_accuracy": 0.0,
+              "save_success_rate": 0.0,
+              "poison_success_rate": 0.0,
+              "kill_success_rate": 0.0
+            }
+          },
+          "overall_score": 2.6
+        }
+      }
+    }
+  ]
+}
