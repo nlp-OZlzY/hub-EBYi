@@ -1,0 +1,77 @@
+from agents import *
+
+class GameEngine:
+    def __init__(self):
+        self.agents = []
+        self.day = 0
+        self.logs = []
+        self.init_agents()
+
+    def init_agents(self):
+        # 标准配置：1狼 + 1预言家 + 1女巫 + 1平民
+        self.agents = [
+            WolfAgent("1号"),
+            SeerAgent("2号"),
+            WitchAgent("3号"),
+            VillagerAgent("4号"),
+        ]
+
+    def start_game(self):
+        self.log("游戏开始，角色分配完成")
+        for a in self.agents:
+            self.log(f"{a.name} {a.role}")
+
+    def night_phase(self):
+        self.log(f"\n----- 第{self.day}晚 -----")
+        # 狼人行动
+        wolf = self.get_alive_wolf()
+        if wolf:
+            target = wolf.choose_kill(self.agents)
+            self.log(f"狼人选择杀死：{target.name}")
+
+        # 预言家行动
+        seer = self.get_alive_seer()
+        if seer:
+            target = seer.choose_check(self.agents)
+            self.log(f"预言家查验：{target.name} 是 {target.role}")
+
+        # 女巫行动
+        witch = self.get_alive_witch()
+        if witch:
+            witch.choose_heal()
+            witch.choose_poison(self.agents)
+
+    def day_phase(self):
+        self.day += 1
+        self.log(f"\n----- 第{self.day}天 -----")
+        # 发言
+        for a in self.get_alive_agents():
+            speech = a.speak()
+            self.log(f"{a.name}({a.role})：{speech}")
+
+        # 投票
+        self.log("\n【投票阶段】")
+        for a in self.get_alive_agents():
+            vote = a.vote(self.agents)
+            self.log(f"{a.name} 投给了 {vote.name}")
+
+    def run(self):
+        while not self.is_game_over():
+            self.night_phase()
+            self.day_phase()
+        self.log("\n游戏结束！")
+
+    def log(self, msg):
+        self.logs.append(msg)
+        print(msg)
+
+    # 工具方法
+    def get_alive_agents(self): return [a for a in self.agents if a.alive]
+    def get_alive_wolf(self): return next((a for a in self.agents if a.role == "狼人" and a.alive), None)
+    def get_alive_seer(self): return next((a for a in self.agents if a.role == "预言家" and a.alive), None)
+    def get_alive_witch(self): return next((a for a in self.agents if a.role == "女巫" and a.alive), None)
+
+    def is_game_over(self):
+        wolves = self.get_alive_wolf()
+        villagers = len([a for a in self.agents if a.role != "狼人" and a.alive])
+        return not wolves or villagers == 0
