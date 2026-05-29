@@ -1,0 +1,416 @@
+{
+  "game_id": "game_89",
+  "winner": "evil",
+  "run_mode": "大模型模式",
+  "seed": 89,
+  "role_assignment": {
+    "0": "witch",
+    "1": "werewolf",
+    "2": "villager",
+    "3": "seer",
+    "4": "hunter",
+    "5": "werewolf"
+  },
+  "dialogues": [
+    {
+      "day": 1,
+      "player_id": 0,
+      "player_name": "玩家0",
+      "role": "witch",
+      "phase": "day",
+      "content": "我是好人，昨晚没有死人，可能是女巫救了人或者狼人空刀。希望好人积极发言，一起找狼。"
+    },
+    {
+      "day": 1,
+      "player_id": 1,
+      "player_name": "玩家1",
+      "role": "werewolf",
+      "phase": "day",
+      "content": "我是玩家1，第一天没什么信息，但感觉玩家2的发言有点刻意，先点一下他吧。"
+    },
+    {
+      "day": 1,
+      "player_id": 2,
+      "player_name": "玩家2",
+      "role": "villager",
+      "phase": "day",
+      "content": "我是玩家2，平民身份，信息很少。第一天希望大家理性发言，不要冲动，我会仔细听每个人的发言找出狼人。"
+    },
+    {
+      "day": 1,
+      "player_id": 3,
+      "player_name": "玩家3",
+      "role": "seer",
+      "phase": "day",
+      "content": "我是预言家，昨晚查验了玩家4，结果是好人。希望好人能信任我，一起找出狼人。"
+    },
+    {
+      "day": 1,
+      "player_id": 4,
+      "player_name": "玩家4",
+      "role": "hunter",
+      "phase": "day",
+      "content": "大家早上好，我是玩家4。第一天还没什么信息，先听听各位的发言吧。"
+    },
+    {
+      "day": 1,
+      "player_id": 5,
+      "player_name": "玩家5",
+      "role": "werewolf",
+      "phase": "day",
+      "content": "大家好，我是平民。第一天没什么信息，大家先别急着下结论，听听每个人的发言再决定吧。"
+    },
+    {
+      "day": 2,
+      "player_id": 1,
+      "player_name": "玩家1",
+      "role": "werewolf",
+      "phase": "day",
+      "content": "我觉得昨天的发言里，玩家2虽然说自己平民，但反复强调理性发言有点刻意，像是在带节奏。另外玩家3昨晚被刀了，他是预言家查了玩家4是好人，我暂时信这个信息。不过今天还是要多听听大家的发言，尤其注意那些急于带节奏的人。"
+    },
+    {
+      "day": 2,
+      "player_id": 2,
+      "player_name": "玩家2",
+      "role": "villager",
+      "phase": "day",
+      "content": "相信玩家3的预言家身份，他查了玩家4是好人，我暂时信任玩家4。玩家1第一天无端怀疑我，行为可疑，建议今天重点听玩家1和玩家5的发言找狼。"
+    },
+    {
+      "day": 2,
+      "player_id": 4,
+      "player_name": "玩家4",
+      "role": "hunter",
+      "phase": "day",
+      "content": "我是猎人玩家4。昨晚玩家3被刀，他是预言家且查验我是好人，这个信息可信。现在场上剩1、2、5和我，我觉得狼就在1和2里，尤其玩家1昨天第一轮就踩玩家2，可能是想带节奏。今天先听你们发言，我会跟票投票。"
+    },
+    {
+      "day": 2,
+      "player_id": 5,
+      "player_name": "玩家5",
+      "role": "werewolf",
+      "phase": "day",
+      "content": "大家早上好，我是玩家5。昨天玩家3跳预言家查了玩家4是好人，但昨晚他死了，我觉得有点奇怪。如果他是真预言家，狼人为什么不刀他？第一天他跳出来其实风险很大，可能他是狼人自刀或者乱跳身份。我建议今天先听听玩家4和玩家2的发言，尤其是玩家2，昨天"
+    },
+    {
+      "day": 3,
+      "player_id": 1,
+      "player_name": "玩家1",
+      "role": "werewolf",
+      "phase": "day",
+      "content": "我是玩家1，目前场上只剩我们三人。玩家3之前预言家查了玩家4是好人，我昨天也信任这一点。但昨天玩家2死了，他可能是被狼人刀死的。我觉得玩家5的发言一直模棱两可，尤其是在第二天他质疑玩家3的预言家身份，行为可疑。建议今天出玩家5，大家觉得呢？"
+    },
+    {
+      "day": 3,
+      "player_id": 4,
+      "player_name": "玩家4",
+      "role": "hunter",
+      "phase": "day",
+      "content": "我（玩家4，猎人）认为昨晚玩家2被刀，现在场上只剩玩家1、我和玩家5。玩家5昨天质疑玩家3预言家身份的反应非常可疑，像是狼人在带节奏。我建议今天先出玩家5，如果他是狼，我们好人赢面就大了。如果错了，我作为猎人出局时也会带走另一个可疑目标。"
+    },
+    {
+      "day": 3,
+      "player_id": 5,
+      "player_name": "玩家5",
+      "role": "werewolf",
+      "phase": "day",
+      "content": "我是玩家5，昨天我的发言被中断了。我想说的是，玩家2之前行为可疑，现在他昨晚被刀死了，我反而觉得有点蹊跷。如果他是狼，狼人不会杀自己人；如果他是好人，那狼人可能想灭口一个带节奏的人。目前我倾向于信任玩家4，因为预言家验了他好人。但玩家1之前"
+    },
+    {
+      "day": 3,
+      "player_id": 4,
+      "player_name": "玩家4",
+      "role": "hunter",
+      "phase": "hunter",
+      "content": "我选择带走玩家5。"
+    }
+  ],
+  "night_actions": [
+    {
+      "day": 1,
+      "actor_id": 1,
+      "actor_name": "玩家1",
+      "actor_role": "werewolf",
+      "action": "werewolf_kill_vote",
+      "target_id": 0,
+      "target_name": "玩家0",
+      "detail": "狼人夜晚选择击杀目标",
+      "reasoning_summary": "我是狼人，首日无信息，随便投一个非同伴玩家避免暴露"
+    },
+    {
+      "day": 1,
+      "actor_id": 5,
+      "actor_name": "玩家5",
+      "actor_role": "werewolf",
+      "action": "werewolf_kill_vote",
+      "target_id": 0,
+      "target_name": "玩家0",
+      "detail": "狼人夜晚选择击杀目标",
+      "reasoning_summary": "作为狼人，第一天没有信息，随便投一个非狼人玩家以避免暴露身份。"
+    },
+    {
+      "day": 1,
+      "actor_id": 0,
+      "actor_name": "玩家0",
+      "actor_role": "witch",
+      "action": "witch_consult",
+      "target_id": 0,
+      "target_name": "玩家0",
+      "detail": "法官询问女巫是否使用解药",
+      "reasoning_summary": "女巫已知今晚被刀目标是玩家0并看到死亡上下文，等待决定是否救人。"
+    },
+    {
+      "day": 1,
+      "actor_id": 0,
+      "actor_name": "玩家0",
+      "actor_role": "witch",
+      "action": "witch_save",
+      "target_id": 0,
+      "target_name": "玩家0",
+      "detail": "女巫使用解药救人",
+      "reasoning_summary": "作为女巫，我被狼人刀了，必须自救以确保神牌存活继续帮助好人阵营。"
+    },
+    {
+      "day": 1,
+      "actor_id": 3,
+      "actor_name": "玩家3",
+      "actor_role": "seer",
+      "action": "seer_check",
+      "target_id": 4,
+      "target_name": "玩家4",
+      "detail": "查验结果: 好人",
+      "reasoning_summary": "预言家优先查验尚未确认阵营的玩家4。"
+    },
+    {
+      "day": 2,
+      "actor_id": 1,
+      "actor_name": "玩家1",
+      "actor_role": "werewolf",
+      "action": "werewolf_kill_vote",
+      "target_id": 3,
+      "target_name": "玩家3",
+      "detail": "狼人夜晚选择击杀目标",
+      "reasoning_summary": "玩家3自称预言家，对狼人威胁最大，必须尽快投票出局。"
+    },
+    {
+      "day": 2,
+      "actor_id": 5,
+      "actor_name": "玩家5",
+      "actor_role": "werewolf",
+      "action": "werewolf_kill_vote",
+      "target_id": 3,
+      "target_name": "玩家3",
+      "detail": "狼人夜晚选择击杀目标",
+      "reasoning_summary": "作为狼人，我得先把这个跳预言家的假货投出去，免得他带崩节奏。"
+    },
+    {
+      "day": 3,
+      "actor_id": 1,
+      "actor_name": "玩家1",
+      "actor_role": "werewolf",
+      "action": "werewolf_kill_vote",
+      "target_id": 2,
+      "target_name": "玩家2",
+      "detail": "狼人夜晚选择击杀目标",
+      "reasoning_summary": "我是狼人，同伴是5，场上4是猎人必须避其锋芒，2是平民且被4怀疑，今天投票出2阻力最小，能暗中削弱好人阵营。"
+    },
+    {
+      "day": 3,
+      "actor_id": 5,
+      "actor_name": "玩家5",
+      "actor_role": "werewolf",
+      "action": "werewolf_kill_vote",
+      "target_id": 2,
+      "target_name": "玩家2",
+      "detail": "狼人夜晚选择击杀目标",
+      "reasoning_summary": "我是狼，玩家2是好人，必须和他一起冲票出局，确保狼队友存活。"
+    },
+    {
+      "day": 3,
+      "actor_id": 4,
+      "actor_name": "玩家4",
+      "actor_role": "hunter",
+      "action": "hunter_shot",
+      "target_id": 5,
+      "target_name": "玩家5",
+      "detail": "猎人被淘汰后触发开枪，带走目标",
+      "reasoning_summary": "我（猎人）认为玩家5质疑预言家身份的行为最像狼，场上只剩三人，必须冒险一搏，出他才能有机会翻盘。"
+    }
+  ],
+  "deaths": [
+    {
+      "day": 1,
+      "player_id": 0,
+      "player_name": "玩家0",
+      "role": "witch",
+      "cause": "vote"
+    },
+    {
+      "day": 2,
+      "player_id": 3,
+      "player_name": "玩家3",
+      "role": "seer",
+      "cause": "night_kill"
+    },
+    {
+      "day": 3,
+      "player_id": 2,
+      "player_name": "玩家2",
+      "role": "villager",
+      "cause": "night_kill"
+    },
+    {
+      "day": 3,
+      "player_id": 4,
+      "player_name": "玩家4",
+      "role": "hunter",
+      "cause": "vote"
+    },
+    {
+      "day": 3,
+      "player_id": 5,
+      "player_name": "玩家5",
+      "role": "werewolf",
+      "cause": "hunter_shot"
+    }
+  ],
+  "day_votes": [
+    {
+      "day": 1,
+      "target_id": 0,
+      "votes": 4,
+      "tie": false
+    },
+    {
+      "day": 2,
+      "target_id": null,
+      "votes": 2,
+      "tie": true
+    },
+    {
+      "day": 3,
+      "target_id": 4,
+      "votes": 2,
+      "tie": false
+    }
+  ],
+  "vote_actions": [
+    {
+      "day": 1,
+      "actor_id": 0,
+      "actor_name": "玩家0",
+      "actor_role": "witch",
+      "target_id": 1,
+      "target_name": "玩家1",
+      "reasoning_summary": "暂无明确身份信息，离线策略从其他存活玩家中选择一个可投目标。"
+    },
+    {
+      "day": 1,
+      "actor_id": 1,
+      "actor_name": "玩家1",
+      "actor_role": "werewolf",
+      "target_id": 0,
+      "target_name": "玩家0",
+      "reasoning_summary": "我是狼人，第一天没有线索，随便投一个非同伴玩家混淆视线。"
+    },
+    {
+      "day": 1,
+      "actor_id": 2,
+      "actor_name": "玩家2",
+      "actor_role": "villager",
+      "target_id": 0,
+      "target_name": "玩家0",
+      "reasoning_summary": "我是村民，第一天没有线索，随机投一个看看反应。"
+    },
+    {
+      "day": 1,
+      "actor_id": 3,
+      "actor_name": "玩家3",
+      "actor_role": "seer",
+      "target_id": 0,
+      "target_name": "玩家0",
+      "reasoning_summary": "我是预言家，已知玩家4是好人，第一天没有其他信息，我选择随机投票给玩家0以避免暴露身份或误伤好人。"
+    },
+    {
+      "day": 1,
+      "actor_id": 4,
+      "actor_name": "玩家4",
+      "actor_role": "hunter",
+      "target_id": 0,
+      "target_name": "玩家0",
+      "reasoning_summary": "第一天没有信息，随机选一个玩家投票，尽量不暴露自己猎人的身份。"
+    },
+    {
+      "day": 1,
+      "actor_id": 5,
+      "actor_name": "玩家5",
+      "actor_role": "werewolf",
+      "target_id": 2,
+      "target_name": "玩家2",
+      "reasoning_summary": "第一天没有信息，随机投给一个非狼同伴的玩家，避免暴露自己。"
+    },
+    {
+      "day": 2,
+      "actor_id": 1,
+      "actor_name": "玩家1",
+      "actor_role": "werewolf",
+      "target_id": 2,
+      "target_name": "玩家2",
+      "reasoning_summary": "玩家2被我第一天点过，可能对我有敌意，投票他既能削弱好人阵营，又能避免暴露自己，符合狼人胜利目标。"
+    },
+    {
+      "day": 2,
+      "actor_id": 2,
+      "actor_name": "玩家2",
+      "actor_role": "villager",
+      "target_id": 1,
+      "target_name": "玩家1",
+      "reasoning_summary": "作为平民，我认为玩家3是真预言家，他查验玩家4是好人，那么狼人可能在1或5中，玩家1第一天刻意点我，嫌疑较大，我决定投票给他。"
+    },
+    {
+      "day": 2,
+      "actor_id": 4,
+      "actor_name": "玩家4",
+      "actor_role": "hunter",
+      "target_id": 1,
+      "target_name": "玩家1",
+      "reasoning_summary": "预言家给我金水，我就先怀疑第一个带节奏的玩家1吧。"
+    },
+    {
+      "day": 2,
+      "actor_id": 5,
+      "actor_name": "玩家5",
+      "actor_role": "werewolf",
+      "target_id": 2,
+      "target_name": "玩家2",
+      "reasoning_summary": "作为狼人，我选择投票给玩家2，因为他被同伴点过，容易成为焦点，且淘汰他可以掩护我们。"
+    },
+    {
+      "day": 3,
+      "actor_id": 1,
+      "actor_name": "玩家1",
+      "actor_role": "werewolf",
+      "target_id": 4,
+      "target_name": "玩家4",
+      "reasoning_summary": "只要白天投出猎人4，他开枪后只剩我一个狼，直接获胜。"
+    },
+    {
+      "day": 3,
+      "actor_id": 4,
+      "actor_name": "玩家4",
+      "actor_role": "hunter",
+      "target_id": 5,
+      "target_name": "玩家5",
+      "reasoning_summary": "我是猎人，场上剩1、4、5，玩家5质疑预言家身份试图带节奏，狼人大概率是他，投他出局我就能赢。"
+    },
+    {
+      "day": 3,
+      "actor_id": 5,
+      "actor_name": "玩家5",
+      "actor_role": "werewolf",
+      "target_id": 4,
+      "target_name": "玩家4",
+      "reasoning_summary": "我是狼人，场上只剩玩家1（同伴）、玩家4（猎人）和我，必须投出玩家4，赌他开枪带走玩家1，这样我就能获胜。"
+    }
+  ]
+}
