@@ -1,0 +1,17 @@
+=== FULL DEBUG ===
+
+[1] Checking PDF parsing...
+PDF path: ./uploads/09b97e48-79ec-4d6e-95ce-9f3a92961ce7.pdf
+File exists: True
+Parse success: True
+Number of chunks: 334
+First chunk page: 1
+First chunk content length: 238
+
+[2] Testing Milvus...
+
+[3] Inserting test data...
+Insert successful
+Stats after insert: {'row_count': 0}
+Query results: 1
+Text: 汽车发动机是汽车的核心部件，负责产生动力驱动车辆前进。
